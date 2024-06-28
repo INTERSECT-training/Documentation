@@ -10,7 +10,13 @@
     <loc>https://INTERSECT-training.github.io/Documentation/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Documentation/better-practices.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/images.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Documentation/index.html</loc>
@@ -25,13 +31,25 @@
     <loc>https://INTERSECT-training.github.io/Documentation/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Documentation/instructor/better-practices.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/instructor/images.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Documentation/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Documentation/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Documentation/instructor/practice.html</loc>
@@ -49,7 +67,13 @@
     <loc>https://INTERSECT-training.github.io/Documentation/instructor/types.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Documentation/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/Documentation/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Documentation/practice.html</loc>
