@@ -20,6 +20,6 @@ better documentation habits.
 * Python 3.10+ with pip (installed locally)
 * Text editor
 * GitHub account
-* Copy of [INTERSECT Day 2 Template](https://github.com/INTERSECT-training/intersect-training-day2)
+* Copy of [INTERSECT Practice Template](https://github.com/INTERSECT-training/intersect-training-practice)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
