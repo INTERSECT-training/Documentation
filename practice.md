@@ -37,7 +37,7 @@ a particular step size `h`, and the derivative of the function.
 Write some documentation for the following code snippet:
 
 ```python
-class EulersMethod(self):
+class EulersMethod:
     def deriv(self, x, y):
         return y**2 + y*x + x**3
     def approx(self, y, x, h):
