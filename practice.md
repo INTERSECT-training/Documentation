@@ -6,15 +6,15 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Become familiar with real-life examples of documentation."
-- "Practice writing different kinds of documentation."
+- Become familiar with real-life examples of documentation.
+- Practice writing different kinds of documentation.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- "What does developer documentation look like in practice?"
-- "What does user documentation look like in practice?"
+- What does developer documentation look like in practice?
+- What does user documentation look like in practice?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -81,8 +81,8 @@ Keep in mind culture, context, and experience when writing your instructions.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "There are numerous examples of different types of documentation in practice, each with its own intended purpose."
-- "A project must pick the documentation that makes the most sense for its use case and domain."
+- There are numerous examples of different types of documentation in practice, each with its own intended purpose.
+- A project must pick the documentation that makes the most sense for its use case and domain.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
