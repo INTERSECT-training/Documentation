@@ -6,15 +6,15 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Become familiar with categories of tools to streamline documentation processes."
-- "Practice using a small subset of documentation tools."
+- Become familiar with categories of tools to streamline documentation processes.
+- Practice using a small subset of documentation tools.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- "What tools enable better documentation?"
-- "What tools can streamline the documentation process?"
+- What tools enable better documentation?
+- What tools can streamline the documentation process?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -51,7 +51,7 @@ Google has many style guides, including a Python guide for
 Using the Google style guide, write a docstring for the following class and its methods:
 
 ```python
-class EulersMethod(self):
+class EulersMethod:
    def deriv(self, x, y):
        return y**2 + y*x + x**3
    def approx(self, y, x, h):
@@ -80,7 +80,7 @@ Many of these IDEs incorporate documentation generators that follow standard
 style guides. For example, the [Spyder IDE](https://www.spyder-ide.org/) will
 begin to generate docstrings based on your specified style guide.
 
-![](fig/spyder-docstring.png){alt='Spyder IDE docstring settings'}
+![](fig/spyder-docstring.png){alt='Spyder IDE docstring settings - dropdown includes different types of docstrings; NumPy style is selected'}
 
 ### Automated Generation
 
@@ -140,17 +140,17 @@ practice repository.
 1. _Make a `gh-pages` branch_.
    Either from the GUI or through command line, make a new branch named `gh-pages`.
    In the GUI, you would do this by clicking on the branches link:
-   ![](fig/branches.png){alt='GitHub Branches button highlighted'}
+   ![](fig/branches.png){alt='On the main repository page, the branches link is circled (directly to the right of the `main` branch dropdown)'}
    Then click on "New branch":
-   ![](fig/new-branch.png){alt='GitHub Branches new branch'}
+   ![](fig/new-branch.png){alt='On the branches page, the "New branch" button on the top-right is circled'}
    Name it `gh-pages`:
-   ![](fig/gh-pages-branch.png){alt='GitHub Branches gh-pages branch'}
+   ![](fig/gh-pages-branch.png){alt='Create a new branch pop-up dialog with the name `gh-pages` typed into "New branch name" text box'}
 2. _Set up GitHub to build from that branch_.
    In the GUI, go to "Settings" > "Pages":
-   ![](fig/gh-pages-setting.png){alt='GitHub Pages Settings'}
+   ![](fig/gh-pages-setting.png){alt='Under the Settings tab, the Pages section is selected. Shows option for "Build and deployment" that include Source, branch, and Custom domain'}
    Change the settings to "Source: Deploy from branch", "Branch: gh-pages", and
    "directory /docs". Then hit "Save."
-   ![](fig/gh-pages-final-settings.png){alt='GitHub Pages final settings'}
+   ![](fig/gh-pages-final-settings.png){alt='GitHub Pages modified settings - Source is set to "Deploy from a branch", Branch is set to `gh-pages`, and directory is set to `/docs`'}
 
 Now complete the following exercise!
 
@@ -189,8 +189,8 @@ That's it! You now know some useful tips and tricks for making better documentat
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "Documentation tools vary from styles to text editors to automation."
-- "Many tools have quick-start capabilities to get small or new projects started with better documentation processes."
+- Documentation tools vary from styles to text editors to automation.
+- Many tools have quick-start capabilities to get small or new projects started with better documentation processes.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
