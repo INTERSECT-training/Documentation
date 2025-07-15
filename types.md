@@ -7,14 +7,14 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Become familiar with the two main categories of software documentation and how they differ."
+- Become familiar with the two main categories of software documentation and how they differ.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- "What are the different types of software documentation?"
-- "How do the types differ?"
+- What are the different types of software documentation?
+- How do the types differ?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -23,8 +23,8 @@ exercises: 5
 In our discussion of documentation, we will focus on two overarching
 categories: _Developer_ and _User_.
 
-![](fig/undraw-dev.png){alt='Undraw co image of a developer'}
-![](fig/undraw-user.png){alt='Undraw co image of a user'}
+![](fig/undraw-dev.png){alt='Undraw.co image of a developer'}
+![](fig/undraw-user.png){alt='Undraw.co image of a user'}
 
 
 ### But wait... aren't there more?
@@ -59,9 +59,9 @@ the categories above?
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "There are two primary categories for documentation: developer and user."
-- "Developer documentation is intended to describe how developers should interface with a given software package."
-- "User documentation is intended to help users be more successful in the usage of a software package."
+- There are two primary categories for documentation: developer and user.
+- Developer documentation is intended to describe how developers should interface with a given software package.
+- User documentation is intended to help users be more successful in the usage of a software package.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
