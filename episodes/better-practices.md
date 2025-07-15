@@ -6,16 +6,16 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Learn about some of the unconscious biases that are apparent when writing documentation."
-- "Become familiar with practices that have been empirically shown to improve software documentation, both in process and end product."
+- Learn about some of the unconscious biases that are apparent when writing documentation.
+- Become familiar with practices that have been empirically shown to improve software documentation, both in process and end product.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- "How does bias affect documentation?"
-- "What are better practices for software documentation?"
+- How does bias affect documentation?
+- What are better practices for software documentation?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -33,7 +33,7 @@ We are going to make a nut butter and jelly sandwich.
 
 ## Bias in Documentation
 
-![](fig/sandwich.png){alt='Getty Images sandwich art'}
+![](fig/sandwich.png){alt='Getty Images - a image displaying a cartoon rendition of a peanut butter and jelly sandwich'}
 
 You have now told your partner how to make a sandwich. Have you ever done that before?
 Maybe you told them the steps:
@@ -80,8 +80,8 @@ Try this exercise again. We want to make a nut butter and jelly sandwich.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "It is important to be aware of potential unconscious biases when writing documentation. Make sure to consider culture, context, and experience."
-- "No single practice will fit all software projects, but there are some generally better practices: version control, less is more, know your audience, document as you go."
+- It is important to be aware of potential unconscious biases when writing documentation. Make sure to consider culture, context, and experience.
+- No single practice will fit all software projects, but there are some generally better practices: version control, less is more, know your audience, document as you go.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
