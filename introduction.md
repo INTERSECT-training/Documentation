@@ -6,15 +6,15 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- "Become familiar with the benefits and challenges of software documentation."
+- Become familiar with the benefits and challenges of software documentation.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- "What is software documentation?"
-- "Why do we care about it?"
-- "What are the challenges?"
+- What is software documentation?
+- Why do we care about it?
+- What are the challenges?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -24,7 +24,7 @@ Software documentation, per Forward, is any artifact made as part of the
 software development process that is intended to communicate information
 about the software system about which it was written.
 
-![](fig/undraw-doc.png){alt='Undraw Co Image depicting documents'}
+![](fig/undraw-doc.png){alt='Decorative Undraw.co image of three documents'}
 
 Most people are familiar with this concept and know good documentation when
 they see it. More difficult, however, is how to _write_ good documentation.
@@ -64,9 +64,9 @@ and spend a minute browsing the documentation.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- "Software documentation provides both users and developers information about what a software is supposed to do."
-- "Software documentation has numerous benefits including improved team productivity, increased code quality, and better maintainability."
-- "Software documentation can be challenging due to cost and time to maintain."
+- Software documentation provides both users and developers information about what a software is supposed to do.
+- Software documentation has numerous benefits including improved team productivity, increased code quality, and better maintainability.
+- Software documentation can be challenging due to cost and time to maintain.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
