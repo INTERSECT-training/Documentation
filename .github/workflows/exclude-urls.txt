@@ -1,2 +1,1 @@
-http://www.example.com/foo/LICENSE
-https://YOURUSERNAME.github.io/intersect-practice-repo/html/index.html
+http://www.example.com/foo/LICENSE,https://YOURUSERNAME.github.io/intersect-practice-repo/html/index.html
