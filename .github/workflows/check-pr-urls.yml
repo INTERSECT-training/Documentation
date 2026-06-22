@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:    
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     
     - id: files
 #      uses: jitterbit/get-changed-files@v1 ### Hasn't been updated to Node16
-      uses: masesgroup/retrieve-changed-files@v2
+      uses: masesgroup/retrieve-changed-files@v4
       with:
         format: 'csv'
 
