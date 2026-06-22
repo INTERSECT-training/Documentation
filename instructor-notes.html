@@ -355,9 +355,120 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Instructor Notes</h1>
         
-<p>This is a placeholder file. Please add content here.</p>
 
-      <section id="aggregate-instructor-notes"></section>
+<section><h2 class="section-heading" id="timing-and-schedule">Timing and Schedule<a class="anchor" aria-label="anchor" href="#timing-and-schedule"></a>
+</h2>
+<hr class="half-width">
+<p>This lesson is designed for a <strong>single 90-minute slot</strong>.
+It is taught <em>after</em> the collaborative-git section (issues,
+branches, pull requests), so learners already know how to branch,
+commit, and push — you can move briskly through anything
+git-related.</p>
+<table class="table">
+<colgroup>
+<col width="27%">
+<col width="40%">
+<col width="31%">
+</colgroup>
+<thead><tr>
+<th>Time</th>
+<th>Episode</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>~10 min</td>
+<td><strong>Introduction</strong></td>
+<td>Benefits/challenges tables + Spack browsing challenge. Seeds the
+genAI theme.</td>
+</tr>
+<tr>
+<td>~12 min</td>
+<td><strong>Types of Software Documentation</strong></td>
+<td>Dev/user split + the new <strong>Diátaxis</strong> four-mode
+lens.</td>
+</tr>
+<tr>
+<td>~28 min</td>
+<td><strong>Documentation Better Practices</strong></td>
+<td>The two <strong>sandwich exercises</strong> are the heart of the
+lesson — protect this time.</td>
+</tr>
+<tr>
+<td>~22 min</td>
+<td><strong>Documentation in Practice</strong></td>
+<td>README, docstrings (“why not what”), CITATION/licensing, and the
+Euler’s Method practice (with genAI twist).</td>
+</tr>
+<tr>
+<td>~18 min</td>
+<td><strong>Documentation Tools</strong></td>
+<td>Style guides, Sphinx quickstart, and publishing.</td>
+</tr>
+</tbody>
+</table>
+<p>Total ~90 min.</p>
+<div class="section level3">
+<h3 id="the-optional-tools-exercise">The Optional Tools exercise<a class="anchor" aria-label="anchor" href="#the-optional-tools-exercise"></a>
+</h3>
+<p>The final Tools exercise is intentionally <strong>optional /
+take-home</strong> — learners almost certainly won’t finish it live, and
+that’s by design. If you’re short on time, point them to it and move on;
+do <strong>not</strong> cut the sandwich exercises to make room.</p>
+<p>It now offers two paths:</p>
+<ul>
+<li>
+<strong>Option A — a personal website</strong>
+(<code>YOURUSERNAME.github.io</code> from an academic/personal
+template). This is the recommended long-term takeaway: most learners
+will get more lasting value from a CV/portfolio site than from
+publishing the practice docs. The instructor having their own such site
+to show off is a great motivator.</li>
+<li>
+<strong>Option B — publish the Sphinx docs</strong> via Read the
+Docs or GitHub Pages Actions, for those who want to close the loop on
+the project-docs workflow.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="genai">GenAI<a class="anchor" aria-label="anchor" href="#genai"></a>
+</h3>
+<p>GenAI is woven through the whole lesson rather than tacked on at the
+end:</p>
+<ul>
+<li>
+<strong>Introduction</strong> — sets up “AI makes drafts cheap; the
+bottleneck moves to review.”</li>
+<li>
+<strong>Better Practices</strong> — ties LLM hallucination to the
+sandwich “benefit of context” point.</li>
+<li>
+<strong>Practice</strong> — the Euler’s Method exercise has a step
+to draft a docstring with an LLM and then critique/correct it.</li>
+<li>
+<strong>Tools</strong> — AI assistants (Copilot, IDE docstring
+generators) with verify-it and data-policy caveats.</li>
+</ul>
+<p>Reinforce the through-line: <strong>generate with AI, but always
+review.</strong></p>
+</div>
+</section><section><h2 class="section-heading" id="exercise-notes">Exercise Notes<a class="anchor" aria-label="anchor" href="#exercise-notes"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>
+<strong>Sandwich (x2):</strong> The point is discovering one’s own
+<em>bias / benefit of context</em>. The second pass should be visibly
+more detailed than the first — that contrast is the lesson.</li>
+<li>
+<strong>Euler’s Method:</strong> Used in both Practice (free-form
+docs) and Tools (Google-style docstring). Learners can build on their
+first attempt.</li>
+<li>
+<strong>Sphinx quickstart:</strong> Have learners use a virtual
+environment; default quickstart options are fine. This is the input to
+the optional publishing step.</li>
+</ul></section><section id="aggregate-instructor-notes"></section>
 </div>
     </main>
 </div>
@@ -407,8 +518,8 @@
   "url": "https://INTERSECT-training.github.io/Documentation/instructor-notes.html",
   "identifier": "https://INTERSECT-training.github.io/Documentation/instructor-notes.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2026-06-16",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

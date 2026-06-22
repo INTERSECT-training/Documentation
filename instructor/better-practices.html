@@ -119,11 +119,11 @@
   Better Documentation
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 22%" class="percentage">
-    22%
+<aside class="col-md-12 lesson-progress"><div style="width: 24%" class="percentage">
+    24%
   </div>
   <div class="progress intersect">
-    <div class="progress-bar intersect" role="progressbar" style="width: 22%" aria-valuenow="22" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar intersect" role="progressbar" style="width: 24%" aria-valuenow="24" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -319,7 +319,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Documentation Better Practices</h1>
-        <p>Last updated on 2025-07-15 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/better-practices.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -386,68 +386,66 @@ context. You know what a sandwich is. You’ve eaten one before. You may
 have even made one before. As a result, you are able to fill in the
 logical gaps that someone who has never seen or eaten a sandwich might
 not know.</p>
-<p>You must be thoughtful when writing your documentation. In
-particular, it is important to consider:</p>
-<ul><li>
-<em>Culture</em>: You are an end product of your culture. Your
-culture provides you with a common understanding, common language, and
-more. Avoid slang/colloquialisms (e.g., “spaghetti code”), use clear and
-concise language, and consider how your audience’s culture may differ
-from your own.</li>
-<li>
-<em>Context</em>: What does “workflow” mean? That depends on your
-context. Different domain sciences may use the same words in different
-contexts. Be cautious of this and ensure that your audience is aware of
-your domain’s particular language and context.</li>
-<li>
-<em>Experience</em>: People are different, and their experiences are
-different. Your documentation should also take that into account. Design
-your documentation to match the experience level you expect of your
-audience, and <em>note that in the documentation</em>!</li>
-</ul></section><section><h2 class="section-heading" id="documentation-better-practices">Documentation Better Practices<a class="anchor" aria-label="anchor" href="#documentation-better-practices"></a></h2>
-<hr class="half-width"><p>There is no one-size fits all process for documentation. Instead, use
-this as a guide for some better practices that may help your
-project.</p>
-<ol style="list-style-type: decimal"><li>
-<em>Version control your documentation</em>: Especially if your
-documentation is separate from your code repository, it is imperative to
-version control your official documentation. This can help you track the
-changes over the time, revert, find trends, etc., much like you would do
-with source code.</li>
-<li>
-<em>Good enough is better than perfect</em>: Documentation takes a
-lot of time, and there will always be room for improvement. It is always
-better to have good enough documentation than to get stuck in endless
-discussions and iterations to try to make it “perfect.” It can always be
-updated if need be later.</li>
-<li>
-<em>Less is more</em>: More documentation means more technical debt.
-It’s a good practice to minimize your documentation to what you actually
-need. The less documentation you have, the more time you have to make
-that documentation better. As your project grows, that may mean your set
-of documents grows. You should always aim, however, to have just the
-right amount. If you have an established project that seems like it has
-a <em>lot</em> of unnecessary documentation, consider flagging documents
-for removal.</li>
-<li>
-<em>Know your audience</em>: Who is supposed to use this
-documentation? What level of knowledge do they have? Answering these
-questions will help you anticipate questions and help needed.</li>
-<li>
-<em>Document as you go</em>: It can be difficult to go back and
-write documentation a day later. It’s even more difficult to try to do
-it a month later. It is recommended that documentation updates happen as
-part of your regular work so it’s fresh in your mind and can help inform
-your development path.</li>
-<li>
-<em>User test your documentation</em>: A great way to keep your
-documentation current and accurate is to regularly use it. This,
-however, goes back to the sandwich idea - you may have a bias and fill
-in the gaps that you consider to be “obvious.” Instead, have a new team
-member try to use the documentation. For every question they have or
-barrier they hit, make an adjustment to that section of the
-document.</li>
-</ol><div id="lets-make-a-sandwich-again" class="callout discussion">
+<p>You have the <strong>benefit of context</strong> — and your reader
+may not. Be thoughtful about three things in particular:</p>
+<table class="table"><colgroup><col width="45%"><col width="28%"><col width="25%"></colgroup><thead><tr><th>Watch out for…</th>
+<th>Because…</th>
+<th>Better Practice</th>
+</tr></thead><tbody><tr><td><strong>Culture</strong></td>
+<td>Slang and colloquialisms (“spaghetti code”) don’t translate.</td>
+<td>Use clear, concise language; assume a different background.</td>
+</tr><tr><td><strong>Context</strong></td>
+<td>The same word (“workflow”) means different things across
+domains.</td>
+<td>Define domain-specific terms; don’t assume shared jargon.</td>
+</tr><tr><td><strong>Experience</strong></td>
+<td>Readers range from novice to expert.</td>
+<td>Match the expected experience level — and <em>state</em> that level
+in the docs.</td>
+</tr></tbody></table></section><section><h2 class="section-heading" id="documentation-better-practices">Documentation Better Practices<a class="anchor" aria-label="anchor" href="#documentation-better-practices"></a></h2>
+<hr class="half-width"><p>There is no one-size-fits-all process. Use these as a guide for
+practices that tend to help:</p>
+<table class="table"><colgroup><col width="66%"><col width="33%"></colgroup><thead><tr><th>Practice</th>
+<th>Why</th>
+</tr></thead><tbody><tr><td><strong>Version control your docs</strong></td>
+<td>Track changes, revert, and review them just like source code —
+especially if docs live outside the code repo.</td>
+</tr><tr><td><strong>Good enough beats perfect</strong></td>
+<td>Don’t get stuck polishing forever; ship useful docs and improve them
+later.</td>
+</tr><tr><td><strong>Less is more</strong></td>
+<td>Every doc is technical debt. Keep only what you need; flag the rest
+for removal.</td>
+</tr><tr><td><strong>Know your audience</strong></td>
+<td>Their knowledge level tells you what to explain and what to
+assume.</td>
+</tr><tr><td><strong>Document as you go</strong></td>
+<td>Writing it now, while it’s fresh, beats reconstructing it a month
+later.</td>
+</tr><tr><td><strong>User-test your docs</strong></td>
+<td>Have a <em>new</em> person follow them; every question or snag marks
+a gap to fix.</td>
+</tr></tbody></table><div id="genai-and-the-benefit-of-context" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-and-the-benefit-of-context" class="callout-inner">
+<h3 class="callout-title">GenAI and the “benefit of context”</h3>
+<div class="callout-content">
+<p>An LLM has the <em>opposite</em> problem from you: it has no real
+knowledge of <em>your</em> project, domain, or users — but it will
+confidently fill the gaps anyway (this is
+<strong>hallucination</strong>). That makes genAI excellent for a
+<strong>first draft</strong> and for spotting what you forgot to
+explain, but the human must supply the true context and <strong>verify
+every claim</strong>. Think of it as a fast, eager collaborator who has
+never actually used your software. A good rule: <em>generate with AI,
+but you own the review.</em></p>
+</div>
+</div>
+</div>
+<div id="lets-make-a-sandwich-again" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -476,6 +474,8 @@ experience.</li>
 <li>No single practice will fit all software projects, but there are
 some generally better practices: version control, less is more, know
 your audience, document as you go.</li>
+<li>GenAI can draft and gap-check documentation, but it lacks real
+project context — you supply the context and verify the output.</li>
 </ul></div>
 </div>
 </div>
@@ -539,8 +539,8 @@ your audience, document as you go.</li>
   "url": "https://INTERSECT-training.github.io/Documentation/instructor/better-practices.html",
   "identifier": "https://INTERSECT-training.github.io/Documentation/instructor/better-practices.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-15",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

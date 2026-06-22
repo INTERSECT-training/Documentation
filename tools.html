@@ -119,11 +119,11 @@
   Better Documentation
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 72%" class="percentage">
-    72%
+<aside class="col-md-12 lesson-progress"><div style="width: 80%" class="percentage">
+    80%
   </div>
   <div class="progress intersect">
-    <div class="progress-bar intersect" role="progressbar" style="width: 72%" aria-valuenow="72" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar intersect" role="progressbar" style="width: 80%" aria-valuenow="80" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -318,7 +318,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Documentation Tools</h1>
-        <p>Last updated on 2025-07-15 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/tools.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -400,26 +400,38 @@ class and its methods:</p>
 </div>
 <div class="section level3">
 <h3 id="ides">IDEs<a class="anchor" aria-label="anchor" href="#ides"></a></h3>
-<p>Modern integrated development environments (IDEs) are applications
-that combine text editing with other useful tools like building,
-testing, etc. Many also enable automatic documentation generation in
-some variety. To name a few:</p>
-<table class="table"><colgroup><col width="25%"><col width="75%"></colgroup><thead><tr><th>IDE</th>
-<th>Languages</th>
-</tr></thead><tbody><tr><td><a href="https://code.visualstudio.com/" class="external-link">VSCode</a></td>
-<td>PHP, HTML, CSS, SCSS, Less, JavaScript, JSON, TypeScript, Markdown,
-PowerShell, C++, Java, Python, Go, T-SQL, C#, .NET Core, etc.</td>
-</tr><tr><td><a href="https://netbeans.apache.org/" class="external-link">NetBeans</a></td>
-<td>C, C++, C++11, Fortran, HTML 5, Java, PHP, etc.</td>
-</tr><tr><td><a href="https://www.jetbrains.com/pycharm/" class="external-link">PyCharm</a></td>
-<td>AngularJS, Coffee Script, CSS, Cython, HTML, JavaScript, Node.js,
-Python, TypeScript</td>
-</tr><tr><td><a href="https://www.eclipse.org/ide/" class="external-link">Eclipse</a></td>
-<td>C, C++, Java, Perl, PHP, Python, Ruby, etc.</td>
-</tr></tbody></table><p>Many of these IDEs incorporate documentation generators that follow
-standard style guides. For example, the <a href="https://www.spyder-ide.org/" class="external-link">Spyder IDE</a> will begin to generate
-docstrings based on your specified style guide.</p>
-<figure><img src="fig/spyder-docstring.png" alt="Spyder IDE docstring settings - dropdown includes different types of docstrings; NumPy style is selected" class="figure mx-auto d-block"></figure></div>
+<p>Modern integrated development environments (IDEs) combine text
+editing with tools like building, testing, and — usefully here —
+<strong>docstring generation</strong>. Popular options include <a href="https://code.visualstudio.com/" class="external-link">VSCode</a>, <a href="https://www.jetbrains.com/pycharm/" class="external-link">PyCharm</a>, <a href="https://netbeans.apache.org/" class="external-link">NetBeans</a>, and <a href="https://www.eclipse.org/ide/" class="external-link">Eclipse</a>; most support many
+languages via extensions.</p>
+<p>Many incorporate documentation generators that follow standard style
+guides. For example, the <a href="https://www.spyder-ide.org/" class="external-link">Spyder
+IDE</a> will present the framework for a docstring in your chosen
+style:</p>
+<figure><img src="fig/spyder-docstring.png" alt="Spyder IDE docstring settings - dropdown includes different types of docstrings; NumPy style is selected" class="figure mx-auto d-block"></figure><div id="genai-powered-assistants" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-powered-assistants" class="callout-inner">
+<h3 class="callout-title">GenAI-powered assistants</h3>
+<div class="callout-content">
+<p>The newest tools in this category are AI coding assistants (GitHub
+Copilot, Cursor, and the docstring features now built into many IDEs).
+They can draft a docstring or comment from your code in one keystroke.
+Two caveats carry over from earlier:</p>
+<ul><li>
+<strong>Verify it.</strong> The assistant infers intent from code —
+it can describe behavior the code doesn’t actually have. You own the
+review.</li>
+<li>
+<strong>Mind the data.</strong> For research code, check your
+group’s and tool’s policy before sending unpublished or sensitive code
+to a third-party service.</li>
+</ul></div>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="automated-generation">Automated Generation<a class="anchor" aria-label="anchor" href="#automated-generation"></a></h3>
 <p>Another set of tools that streamline the documentation process are
@@ -447,7 +459,10 @@ line and have a clone of your practice repository.</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="co"># MacOS/Linux</span></span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="ex">python</span> <span class="at">-m</span> venv virtual-python</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="bu">source</span> virtual-python/bin/activate</span></code></pre>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="bu">source</span> virtual-python/bin/activate</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a><span class="co"># Windows</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a><span class="ex">python</span> <span class="at">-m</span> venv virtual-python</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1" aria-label="code-block-2-6"></a><span class="ex">virtual-python\Scripts\activate</span></span></code></pre>
 </div>
 <ol style="list-style-type: decimal"><li>Install sphinx: <code>pip install sphinx</code>
 </li>
@@ -471,84 +486,102 @@ else as you desire.)</li>
 </div>
 <div class="section level3">
 <h3 id="automated-publishing">Automated Publishing<a class="anchor" aria-label="anchor" href="#automated-publishing"></a></h3>
-<p>Potentially the most helpful method of streamlining the documentation
-process is to implement automated publishing. By implementing this, when
-a new feature or change is merged into your code base, your
-documentation will be generated and published automatically. Two popular
-documentation hosting tools are:</p>
-<ol style="list-style-type: decimal"><li><a href="https://readthedocs.org/" class="external-link">ReadtheDocs</a></li>
-<li><a href="https://pages.github.com/" class="external-link">GitHub Pages</a></li>
-</ol><p>Both of these services will publish documentation from open source
-software for free. They can be set up to publish the most recent version
-of all documentation as soon as a new change is introduced to the main
-code.</p>
-<p>We will practice doing this with GitHub Pages. Before getting into
-the exercise, you will need to make sure GitHub Pages is activated on
-your practice repository.</p>
-<ol style="list-style-type: decimal"><li>
-<em>Make a <code>gh-pages</code> branch</em>. Either from the GUI or
-through command line, make a new branch named <code>gh-pages</code>. In
-the GUI, you would do this by clicking on the branches link: <img src="fig/branches.png" alt="On the main repository page, the branches link is circled (directly to the right of the `main` branch dropdown)" class="figure">
-Then click on “New branch”: <img src="fig/new-branch.png" alt='On the branches page, the "New branch" button on the top-right is circled' class="figure">
-Name it <code>gh-pages</code>: <img src="fig/gh-pages-branch.png" alt='Create a new branch pop-up dialog with the name `gh-pages` typed into "New branch name" text box' class="figure"></li>
-<li>
-<em>Set up GitHub to build from that branch</em>. In the GUI, go to
-“Settings” &gt; “Pages”: <img src="fig/gh-pages-setting.png" alt='Under the Settings tab, the Pages section is selected. Shows option for "Build and deployment" that include Source, branch, and Custom domain' class="figure">
-Change the settings to “Source: Deploy from branch”, “Branch: gh-pages”,
-and “directory /docs”. Then hit “Save.” <img src="fig/gh-pages-final-settings.png" alt='GitHub Pages modified settings - Source is set to "Deploy from a branch", Branch is set to `gh-pages`, and directory is set to `/docs`' class="figure"></li>
-</ol><p>Now complete the following exercise!</p>
-<div id="practice-sphinx-to-github-pages" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
-<div id="practice-sphinx-to-github-pages" class="callout-inner">
-<h3 class="callout-title">PRACTICE: Sphinx to GitHub Pages</h3>
-<div class="callout-content">
-<p>Now that we have some starter documentation, let’s publish it to
-GitHub Pages.</p>
-<p><em>NOTE</em>: These steps assume you are working from the command
-line and have a clone of your practice repository.</p>
-<ol style="list-style-type: decimal"><li>Make a local copy of the <code>gh-pages</code> branch:
-<code>git -b checkout gh-pages</code>
-</li>
-<li>Set your local copy to track GitHub’s copy:
-<code>git push --set-upstream origin gh-pages</code>
-</li>
-<li>Move to the <code>docs</code> directory and clean up the previous
-build: <code>cd docs &amp;&amp; make clean</code>
-</li>
-<li>Change the default build location: For <code>Makefile</code> and
-<code>make.bat</code>, change <code>BUILDDIR = _build</code> to
-<code>BUILDDIR = .</code>
-</li>
-<li>Make your documentation: <code>make html</code>
-</li>
-<li>Make a file <code>index.html</code> in the <code>docs</code>
-directory with the content:
-<code>&lt;meta http-equiv="refresh" content="0; url=./html/index.html" /&gt;</code>
-(<em>NOTE</em>: This tells GitHub to use the
-<code>html/index.html</code> file as the main page.)</li>
-<li>Add all your changes, commit, and push:
-<code>git add docs/ &amp;&amp; git commit -m "Add documentation to GitHub Pages" &amp;&amp; git push</code>
-</li>
-<li>Wait a minute or two, then view your documentation at <a href="https://YOURUSERNAME.github.io/intersect-practice-repo/html/index.html" class="external-link uri">https://YOURUSERNAME.github.io/intersect-practice-repo/html/index.html</a>
-</li>
-</ol></div>
-</div>
-</div>
-<div id="what-happened-to-the-styling" class="callout">
+<p>The biggest time-saver is <strong>automated publishing</strong>: when
+a change is merged, your documentation rebuilds and goes live with no
+manual steps. Two free services dominate for open-source projects:</p>
+<table class="table"><colgroup><col width="27%"><col width="30%"><col width="42%"></colgroup><thead><tr><th>Service</th>
+<th>Best for</th>
+<th>How it works</th>
+</tr></thead><tbody><tr><td><a href="https://readthedocs.org/" class="external-link">Read the Docs</a></td>
+<td>Sphinx/MkDocs projects</td>
+<td>Connect your repo once; it rebuilds on every push.</td>
+</tr><tr><td><a href="https://pages.github.com/" class="external-link">GitHub Pages</a></td>
+<td>Any static site</td>
+<td>A GitHub Actions workflow builds and deploys your docs.</td>
+</tr></tbody></table><p>The modern approach for <strong>both</strong> is the same in spirit:
+you commit your docs source, and a hosted service rebuilds them
+automatically. You no longer need to hand-manage a <code>gh-pages</code>
+branch or commit built HTML — the recommended path is to let the service
+(or a GitHub Actions workflow) do the building.</p>
+<div id="easiest-for-sphinx-read-the-docs" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div id="what-happened-to-the-styling" class="callout-inner">
-<h3 class="callout-title">What happened to the styling?!</h3>
+<div id="easiest-for-sphinx-read-the-docs" class="callout-inner">
+<h3 class="callout-title">Easiest for Sphinx: Read the Docs</h3>
 <div class="callout-content">
-<p>GitHub renders styles in a unique way using <a href="https://jekyllrb.com/" class="external-link">Jekyll</a>. We can turn this off by adding
-an empty <code>.nojekyll</code> file in the <code>docs</code>
-directory.</p>
+<p>For a Sphinx project, the fastest route to published docs is Read the
+Docs:</p>
+<ol style="list-style-type: decimal"><li>Push your <code>docs/</code> directory (from the Sphinx exercise
+above) to GitHub.</li>
+<li>Sign in to <a href="https://readthedocs.org/" class="external-link">readthedocs.org</a>
+with your GitHub account.</li>
+<li>Click <strong>Import a Project</strong>, pick your repo, and
+<strong>Build</strong>.</li>
+</ol><p>That’s it — Read the Docs rebuilds on every push. No branch juggling,
+no <code>.nojekyll</code>, no hand-edited <code>Makefile</code>.</p>
 </div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="github-pages-for-a-personal-website">GitHub Pages for a Personal Website<a class="anchor" aria-label="anchor" href="#github-pages-for-a-personal-website"></a></h3>
+<p>The exact GitHub Pages machinery that publishes project docs can also
+publish a <strong>personal website</strong> — a place for your CV,
+publications, software, and a bit about you. For a researcher or RSE,
+this is one of the highest-return things you can set up, and it costs
+nothing to host.</p>
+<p>The trick is GitHub’s special <strong>user site</strong> repository.
+If you name a repo <code>YOURUSERNAME.github.io</code>, GitHub
+automatically publishes it at
+<code>https://YOURUSERNAME.github.io</code>. You don’t have to write a
+site from scratch — there are excellent academic/personal templates you
+can fork and fill in:</p>
+<table class="table"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th>Template</th>
+<th>Good for</th>
+</tr></thead><tbody><tr><td><a href="https://github.com/academicpages/academicpages.github.io" class="external-link">academicpages</a></td>
+<td>Academic CV, publications, talks (very popular for researchers)</td>
+</tr><tr><td><a href="https://github.com/alshedivat/al-folio" class="external-link">al-folio</a></td>
+<td>Clean academic portfolio with publications</td>
+</tr><tr><td><a href="https://github.com/barryclark/jekyll-now" class="external-link">Jekyll
+Now</a></td>
+<td>A simple blog/personal page, minimal setup</td>
+</tr><tr><td><a href="https://pages.github.com/themes/" class="external-link">GitHub Pages
+themes</a></td>
+<td>Built-in one-click themes for a quick start</td>
+</tr></tbody></table><div id="practice-optional-take-home-build-your-site" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="practice-optional-take-home-build-your-site" class="callout-inner">
+<h3 class="callout-title">PRACTICE (Optional / Take-home): Build
+<em>your</em> site</h3>
+<div class="callout-content">
+<p>You almost certainly won’t finish this in the session — and that’s
+fine. The goal is to know this is <strong>something you can do</strong>,
+and to have the starting point. Pick whichever appeals:</p>
+<p><strong>Option A — A personal website (recommended for the long
+term):</strong></p>
+<ol style="list-style-type: decimal"><li>Find a template above that you like and <strong>fork</strong> it (or
+use GitHub’s “Use this template”).</li>
+<li>Rename the repository to <code>YOURUSERNAME.github.io</code>.</li>
+<li>Edit the config/Markdown files to add your name, bio, and a project
+or two.</li>
+<li>Visit <code>https://YOURUSERNAME.github.io</code> to see it
+live.</li>
+</ol><p><strong>Option B — Publish the project docs you just
+made:</strong></p>
+<ul><li>
+<strong>Read the Docs:</strong> follow the three steps in the
+callout above to publish your Sphinx docs.</li>
+<li>
+<strong>GitHub Pages via Actions:</strong> in your repo, enable
+Pages (Settings &gt; Pages &gt; “Build and deployment” &gt;
+<strong>GitHub Actions</strong>) and add the starter workflow GitHub
+suggests.</li>
+</ul></div>
 </div>
 </div>
 <p>That’s it! You now know some useful tips and tricks for making better
@@ -560,10 +593,17 @@ documentation.</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>Documentation tools vary from styles to text editors to
-automation.</li>
+<ul><li>Documentation tools vary from style guides to IDEs to generators
+(Sphinx, Doxygen) to automated publishing.</li>
 <li>Many tools have quick-start capabilities to get small or new
 projects started with better documentation processes.</li>
+<li>Modern hosting (Read the Docs, GitHub Pages via Actions) rebuilds
+and publishes docs automatically — no manual branch management
+needed.</li>
+<li>The same GitHub Pages tech can host a free personal website
+(<code>YOURUSERNAME.github.io</code>) from a template.</li>
+<li>AI assistants can generate docstrings quickly, but always verify the
+output and mind data-sharing policies.</li>
 </ul></div>
 </div>
 </div>
@@ -628,8 +668,8 @@ projects started with better documentation processes.</li>
   "url": "https://INTERSECT-training.github.io/Documentation/tools.html",
   "identifier": "https://INTERSECT-training.github.io/Documentation/tools.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-15",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

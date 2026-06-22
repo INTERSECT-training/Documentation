@@ -359,7 +359,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -404,49 +404,87 @@ information about the software system about which it was written.</p>
 documentation when they see it. More difficult, however, is how to
 <em>write</em> good documentation.</p>
 <p>In this lesson, students will learn about the different types of
-software development and practices and tools to enable better
+software documentation, plus the practices and tools that enable better
 documentation.</p>
 </section><section><h2 class="section-heading" id="the-benefits-of-good-documentation">The Benefits of Good Documentation<a class="anchor" aria-label="anchor" href="#the-benefits-of-good-documentation"></a>
 </h2>
 <hr class="half-width">
-<p>No one would argue that documentation is useful, but here are some of
-the benefits of good documentation:</p>
-<ul>
-<li>
-<em>Better Maintainability</em>: Undocumented or incorrectly
-documented code can do more harm than good. It is difficult to maintain
-code that does not have sufficient and accurate documentation. Good
-documentation clarifies what the code is doing in each part and makes it
-easier to change.</li>
-<li>
-<em>Improved Team Productivity</em>: Especially for new team
-members, sufficiently good documentation can help get everyone on the
-same page and new members up to speed.</li>
-<li>
-<em>Increased Code Quality</em>: Documenting what you think your
-code does helps to clear up inconsistencies and can lead developers to
-refactor something that is needlessly complicated. Overall,
-documentation has a positive effect on overall quality.</li>
-</ul></section><section><h2 class="section-heading" id="the-challenges-to-making-good-documentation">The Challenges to Making Good Documentation<a class="anchor" aria-label="anchor" href="#the-challenges-to-making-good-documentation"></a>
+<p>No one would argue that documentation isn’t useful. The payoffs:</p>
+<table class="table">
+<colgroup>
+<col width="36%">
+<col width="64%">
+</colgroup>
+<thead><tr>
+<th>Benefit</th>
+<th>Why it matters</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Better maintainability</strong></td>
+<td>Clarifies what each part of the code does, making it safer and
+easier to change.</td>
+</tr>
+<tr>
+<td><strong>Improved team productivity</strong></td>
+<td>Gets everyone on the same page and brings new members up to speed
+faster.</td>
+</tr>
+<tr>
+<td><strong>Increased code quality</strong></td>
+<td>Writing down what code <em>should</em> do surfaces inconsistencies
+and prompts refactoring.</td>
+</tr>
+</tbody>
+</table></section><section><h2 class="section-heading" id="the-challenges-to-making-good-documentation">The Challenges to Making Good Documentation<a class="anchor" aria-label="anchor" href="#the-challenges-to-making-good-documentation"></a>
 </h2>
 <hr class="half-width">
-<p>As anyone would tell you, documentation isn’t easy. Some of the
-challenges involved are:</p>
-<ul>
-<li>
-<em>Time</em>: Writing good documentation can take time, and
-especially for projects with unreliable or limited funding, it can
-become a afterthought. It also introduces potential technical debt if
-interfaces or functionality change.</li>
-<li>
-<em>Skill</em>: Writing good documentation is <em>hard</em>. It must
-be practiced and practiced and practiced. People can become jaded by how
-much practice it takes to become truly skilled at documenting well.</li>
-<li>
-<em>Process</em>: Does writing documentation feel unnatural or
-“clunky” to you? Without proper processes, writing documentation can
-feel like it’s wasting your precious time.</li>
-</ul>
+<p>…but documentation isn’t easy. The common obstacles:</p>
+<table class="table">
+<colgroup>
+<col width="35%">
+<col width="64%">
+</colgroup>
+<thead><tr>
+<th>Challenge</th>
+<th>What it looks like</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Time</strong></td>
+<td>It competes with feature work, and falls out of date as interfaces
+change (technical debt).</td>
+</tr>
+<tr>
+<td><strong>Skill</strong></td>
+<td>Writing clearly is genuinely hard and takes practice — it’s easy to
+get discouraged.</td>
+</tr>
+<tr>
+<td><strong>Process</strong></td>
+<td>Without a habit or workflow, documenting feels “clunky” and like
+wasted effort.</td>
+</tr>
+</tbody>
+</table>
+<div id="where-does-genai-fit" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="where-does-genai-fit" class="callout-inner">
+<h3 class="callout-title">Where does genAI fit?</h3>
+<div class="callout-content">
+<p>Generative AI (LLMs like ChatGPT and Claude) is changing this
+practice. It can draft a docstring, a README, or a tutorial in seconds —
+which knocks down the <strong>time</strong> and <strong>skill</strong>
+barriers above. But cheap first drafts shift the real work from
+<em>writing</em> to <strong>reviewing</strong>: the human still has to
+verify that what the AI wrote is <em>correct</em>. We’ll return to this
+thread throughout the lesson.</p>
+</div>
+</div>
+</div>
 <div id="what-do-you-think-of-this-documentation" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -484,10 +522,10 @@ maintain.</li>
 </div>
 </section></section><section id="aio-types"><p>Content from <a href="types.html">Types of Software Documentation</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/types.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -501,6 +539,7 @@ maintain.</li>
 <ul>
 <li>What are the different types of software documentation?</li>
 <li>How do the types differ?</li>
+<li>How can the Diátaxis framework help organize documentation?</li>
 </ul>
 </div>
 </div>
@@ -512,6 +551,7 @@ maintain.</li>
 <ul>
 <li>Become familiar with the two main categories of software
 documentation and how they differ.</li>
+<li>Recognize the four modes of the Diátaxis framework.</li>
 </ul>
 </div>
 </div>
@@ -584,21 +624,70 @@ the categories above?</p>
 <tbody>
 <tr>
 <td>Developer</td>
-<td>To inform developers how to interface with a given software package
-throughout the entire software development lifecycle, including team
-processes.</td>
-<td>Developers, stakeholders, team members, technical members of
-project</td>
+<td>Inform developers how to interface with a software package across
+the whole development lifecycle, including team processes.</td>
+<td>Developers, technical stakeholders, team members</td>
 </tr>
 <tr>
 <td>User</td>
-<td>To inform users how to be more successful in the usage of a software
-package from installation to usage, including examples, troubleshooting,
-etc.</td>
+<td>Help users succeed with a package from installation through everyday
+use, including examples and troubleshooting.</td>
 <td>End-users, stakeholders</td>
 </tr>
 </tbody>
+</table></section><section><h2 class="section-heading" id="a-modern-take-the-diátaxis-framework">A Modern Take: The Diátaxis Framework<a class="anchor" aria-label="anchor" href="#a-modern-take-the-di%C3%A1taxis-framework"></a>
+</h2>
+<hr class="half-width">
+<p>The developer/user split tells you <em>who</em> you’re writing for.
+<a href="https://diataxis.fr/" class="external-link">Diátaxis</a> is a popular complementary
+framework that asks <em>what kind of help</em> the reader needs right
+now. It identifies <strong>four modes</strong>:</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="24%">
+<col width="30%">
+<col width="27%">
+</colgroup>
+<thead><tr>
+<th>Mode</th>
+<th>Serves</th>
+<th>Answers…</th>
+<th>Example</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Tutorial</strong></td>
+<td>Learning</td>
+<td>“Teach me, step by step.”</td>
+<td>A guided first project</td>
+</tr>
+<tr>
+<td><strong>How-to guide</strong></td>
+<td>A task</td>
+<td>“How do I accomplish X?”</td>
+<td>“How to connect to the database”</td>
+</tr>
+<tr>
+<td><strong>Reference</strong></td>
+<td>Looking up</td>
+<td>“What exactly does this do?”</td>
+<td>API docs, config options</td>
+</tr>
+<tr>
+<td><strong>Explanation</strong></td>
+<td>Understanding</td>
+<td>“Why does it work this way?”</td>
+<td>A design-decisions write-up</td>
+</tr>
+</tbody>
 </table>
+<p>The key insight: these modes have <strong>different goals and
+shouldn’t be mixed</strong>. A tutorial clogged with reference detail
+stops teaching; reference docs padded with explanation get hard to scan.
+Diátaxis maps neatly onto the categories above — tutorials and how-to
+guides lean <em>user</em>, reference and explanation often serve
+<em>both</em>.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -609,17 +698,20 @@ etc.</td>
 <ul>
 <li>There are two primary categories for documentation: developer and
 user.</li>
-<li>Developer documentation is intended to describe how developers
-should interface with a given software package.</li>
-<li>User documentation is intended to help users be more successful in
-the usage of a software package.</li>
+<li>Developer documentation describes how developers should interface
+with a software package.</li>
+<li>User documentation helps users be more successful in using a
+software package.</li>
+<li>The Diátaxis framework reframes the categories — tutorials, how-to
+guides, reference, and explanation — and warns against mixing these
+modes.</li>
 </ul>
 </div>
 </div>
 </div>
 </section></section><section id="aio-better-practices"><p>Content from <a href="better-practices.html">Documentation Better Practices</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/better-practices.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
@@ -689,72 +781,105 @@ context. You know what a sandwich is. You’ve eaten one before. You may
 have even made one before. As a result, you are able to fill in the
 logical gaps that someone who has never seen or eaten a sandwich might
 not know.</p>
-<p>You must be thoughtful when writing your documentation. In
-particular, it is important to consider:</p>
-<ul>
-<li>
-<em>Culture</em>: You are an end product of your culture. Your
-culture provides you with a common understanding, common language, and
-more. Avoid slang/colloquialisms (e.g., “spaghetti code”), use clear and
-concise language, and consider how your audience’s culture may differ
-from your own.</li>
-<li>
-<em>Context</em>: What does “workflow” mean? That depends on your
-context. Different domain sciences may use the same words in different
-contexts. Be cautious of this and ensure that your audience is aware of
-your domain’s particular language and context.</li>
-<li>
-<em>Experience</em>: People are different, and their experiences are
-different. Your documentation should also take that into account. Design
-your documentation to match the experience level you expect of your
-audience, and <em>note that in the documentation</em>!</li>
-</ul></section><section><h2 class="section-heading" id="documentation-better-practices">Documentation Better Practices<a class="anchor" aria-label="anchor" href="#documentation-better-practices"></a>
+<p>You have the <strong>benefit of context</strong> — and your reader
+may not. Be thoughtful about three things in particular:</p>
+<table class="table">
+<colgroup>
+<col width="45%">
+<col width="28%">
+<col width="25%">
+</colgroup>
+<thead><tr>
+<th>Watch out for…</th>
+<th>Because…</th>
+<th>Better Practice</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Culture</strong></td>
+<td>Slang and colloquialisms (“spaghetti code”) don’t translate.</td>
+<td>Use clear, concise language; assume a different background.</td>
+</tr>
+<tr>
+<td><strong>Context</strong></td>
+<td>The same word (“workflow”) means different things across
+domains.</td>
+<td>Define domain-specific terms; don’t assume shared jargon.</td>
+</tr>
+<tr>
+<td><strong>Experience</strong></td>
+<td>Readers range from novice to expert.</td>
+<td>Match the expected experience level — and <em>state</em> that level
+in the docs.</td>
+</tr>
+</tbody>
+</table></section><section><h2 class="section-heading" id="documentation-better-practices">Documentation Better Practices<a class="anchor" aria-label="anchor" href="#documentation-better-practices"></a>
 </h2>
 <hr class="half-width">
-<p>There is no one-size fits all process for documentation. Instead, use
-this as a guide for some better practices that may help your
-project.</p>
-<ol style="list-style-type: decimal">
-<li>
-<em>Version control your documentation</em>: Especially if your
-documentation is separate from your code repository, it is imperative to
-version control your official documentation. This can help you track the
-changes over the time, revert, find trends, etc., much like you would do
-with source code.</li>
-<li>
-<em>Good enough is better than perfect</em>: Documentation takes a
-lot of time, and there will always be room for improvement. It is always
-better to have good enough documentation than to get stuck in endless
-discussions and iterations to try to make it “perfect.” It can always be
-updated if need be later.</li>
-<li>
-<em>Less is more</em>: More documentation means more technical debt.
-It’s a good practice to minimize your documentation to what you actually
-need. The less documentation you have, the more time you have to make
-that documentation better. As your project grows, that may mean your set
-of documents grows. You should always aim, however, to have just the
-right amount. If you have an established project that seems like it has
-a <em>lot</em> of unnecessary documentation, consider flagging documents
-for removal.</li>
-<li>
-<em>Know your audience</em>: Who is supposed to use this
-documentation? What level of knowledge do they have? Answering these
-questions will help you anticipate questions and help needed.</li>
-<li>
-<em>Document as you go</em>: It can be difficult to go back and
-write documentation a day later. It’s even more difficult to try to do
-it a month later. It is recommended that documentation updates happen as
-part of your regular work so it’s fresh in your mind and can help inform
-your development path.</li>
-<li>
-<em>User test your documentation</em>: A great way to keep your
-documentation current and accurate is to regularly use it. This,
-however, goes back to the sandwich idea - you may have a bias and fill
-in the gaps that you consider to be “obvious.” Instead, have a new team
-member try to use the documentation. For every question they have or
-barrier they hit, make an adjustment to that section of the
-document.</li>
-</ol>
+<p>There is no one-size-fits-all process. Use these as a guide for
+practices that tend to help:</p>
+<table class="table">
+<colgroup>
+<col width="66%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Practice</th>
+<th>Why</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Version control your docs</strong></td>
+<td>Track changes, revert, and review them just like source code —
+especially if docs live outside the code repo.</td>
+</tr>
+<tr>
+<td><strong>Good enough beats perfect</strong></td>
+<td>Don’t get stuck polishing forever; ship useful docs and improve them
+later.</td>
+</tr>
+<tr>
+<td><strong>Less is more</strong></td>
+<td>Every doc is technical debt. Keep only what you need; flag the rest
+for removal.</td>
+</tr>
+<tr>
+<td><strong>Know your audience</strong></td>
+<td>Their knowledge level tells you what to explain and what to
+assume.</td>
+</tr>
+<tr>
+<td><strong>Document as you go</strong></td>
+<td>Writing it now, while it’s fresh, beats reconstructing it a month
+later.</td>
+</tr>
+<tr>
+<td><strong>User-test your docs</strong></td>
+<td>Have a <em>new</em> person follow them; every question or snag marks
+a gap to fix.</td>
+</tr>
+</tbody>
+</table>
+<div id="genai-and-the-benefit-of-context" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-and-the-benefit-of-context" class="callout-inner">
+<h3 class="callout-title">GenAI and the “benefit of context”</h3>
+<div class="callout-content">
+<p>An LLM has the <em>opposite</em> problem from you: it has no real
+knowledge of <em>your</em> project, domain, or users — but it will
+confidently fill the gaps anyway (this is
+<strong>hallucination</strong>). That makes genAI excellent for a
+<strong>first draft</strong> and for spotting what you forgot to
+explain, but the human must supply the true context and <strong>verify
+every claim</strong>. Think of it as a fast, eager collaborator who has
+never actually used your software. A good rule: <em>generate with AI,
+but you own the review.</em></p>
+</div>
+</div>
+</div>
 <div id="lets-make-a-sandwich-again" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -787,16 +912,18 @@ experience.</li>
 <li>No single practice will fit all software projects, but there are
 some generally better practices: version control, less is more, know
 your audience, document as you go.</li>
+<li>GenAI can draft and gap-check documentation, but it lacks real
+project context — you supply the context and verify the output.</li>
 </ul>
 </div>
 </div>
 </div>
 </section></section><section id="aio-practice"><p>Content from <a href="practice.html">Documentation in Practice</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/practice.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 22 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -810,6 +937,7 @@ your audience, document as you go.</li>
 <ul>
 <li>What does developer documentation look like in practice?</li>
 <li>What does user documentation look like in practice?</li>
+<li>What belongs in a README, a docstring, and a citation file?</li>
 </ul>
 </div>
 </div>
@@ -821,13 +949,80 @@ your audience, document as you go.</li>
 <ul>
 <li>Become familiar with real-life examples of documentation.</li>
 <li>Practice writing different kinds of documentation.</li>
+<li>Understand the role of the README, docstrings, and
+citation/licensing files.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="developer-documentation-examples">Developer Documentation Examples<a class="anchor" aria-label="anchor" href="#developer-documentation-examples"></a>
+<section><h2 class="section-heading" id="start-the-right-way-the-readme">Start the Right Way: the README<a class="anchor" aria-label="anchor" href="#start-the-right-way-the-readme"></a>
+</h2>
+<hr class="half-width">
+<p>Before any framework or tool, almost every project’s documentation
+begins with a single file: the <strong>README</strong>. It’s the first
+thing a visitor sees on GitHub, and for many research projects it’s the
+<em>only</em> documentation that exists. A good README answers a
+newcomer’s questions fast:</p>
+<table class="table">
+<thead><tr>
+<th>Section</th>
+<th>Answers</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>What and why</strong></td>
+<td>What does this do, and why would I use it?</td>
+</tr>
+<tr>
+<td><strong>Install</strong></td>
+<td>How do I get it running?</td>
+</tr>
+<tr>
+<td><strong>Usage / quick example</strong></td>
+<td>Show me the simplest thing that works.</td>
+</tr>
+<tr>
+<td><strong>License</strong></td>
+<td>Can I use it, and how?</td>
+</tr>
+<tr>
+<td><strong>How to cite</strong></td>
+<td>How do I give credit in a paper?</td>
+</tr>
+<tr>
+<td><strong>Contributing / contact</strong></td>
+<td>How do I report a bug or get help?</td>
+</tr>
+</tbody>
+</table>
+<p>You don’t need all of these on day one — but a README that covers
+<em>what/why</em> and a <em>quick example</em> already puts you ahead of
+most research code.</p>
+</section><section><h2 class="section-heading" id="document-the-why-not-the-what-docstrings-and-comments">Document the <em>Why</em>, Not the <em>What</em>: Docstrings and
+Comments<a class="anchor" aria-label="anchor" href="#document-the-why-not-the-what-docstrings-and-comments"></a>
+</h2>
+<hr class="half-width">
+<p>Two kinds of in-code documentation do most of the day-to-day
+work:</p>
+<ul>
+<li>
+<strong>Docstrings</strong> describe <em>what a function/class does
+and how to use it</em> — its inputs, outputs, and behavior. They’re
+written for the person <em>calling</em> your code (and power tools like
+Sphinx, covered next episode).</li>
+<li>
+<strong>Inline comments</strong> explain <em>why</em> a particular
+piece of code is the way it is — the non-obvious decision, the
+workaround, the edge case.</li>
+</ul>
+<p>The better practice: <strong>comment the <em>why</em>, not the
+<em>what</em></strong>. Code already says <em>what</em> it does; a
+comment like <code># add 1 to i</code> is noise. A comment explaining
+<em>why</em> you add 1 (an off-by-one in an upstream API, say) is
+gold.</p>
+</section><section><h2 class="section-heading" id="developer-documentation-examples">Developer Documentation Examples<a class="anchor" aria-label="anchor" href="#developer-documentation-examples"></a>
 </h2>
 <hr class="half-width">
 <table class="table">
@@ -893,8 +1088,14 @@ derivative of the function.</p>
 <span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a>        x_j <span class="op">=</span> x <span class="op">+</span> h</span>
 <span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a>        <span class="cf">return</span> y_j, x_j</span></code></pre>
 </div>
-<p><strong>BONUS</strong>: How would you improve this code to make it
+<p><strong>Bonus</strong>: How would you improve this code to make it
 more clear?</p>
+<p><strong>GenAI Bonus</strong>: Ask an LLM to write a docstring for
+this class. Then <em>critique</em> its output: Did it correctly describe
+what <code>deriv</code> and <code>approx</code> actually do? Did it
+invent behavior the code doesn’t have? Did it explain the <em>why</em>?
+Fix what it got wrong. This is the review skill that matters most when
+documenting with AI.</p>
 </div>
 </div>
 </div>
@@ -974,6 +1175,34 @@ instructions.</p>
 </div>
 </div>
 </div>
+<div id="make-it-citable-citation-and-license" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="make-it-citable-citation-and-license" class="callout-inner">
+<h3 class="callout-title">Make It Citable: CITATION and LICENSE</h3>
+<div class="callout-content">
+<p>Two small files matter a lot for <em>research</em> software:</p>
+<ul>
+<li>
+<strong><code>LICENSE</code></strong> tells others what they’re
+legally allowed to do with your code. Without one, the default is “all
+rights reserved” — others can’t reuse it, even if your repo is
+public.</li>
+<li>
+<strong><code>CITATION.cff</code></strong> is a simple, structured
+(<a href="https://citation-file-format.github.io/" class="external-link">Citation File
+Format</a>) file telling people how to cite your software. GitHub reads
+it and shows a “Cite this repository” button automatically — so your
+work gets credited correctly in papers.</li>
+</ul>
+<p>These pair naturally with the contributing guides and pull-request
+workflow from the previous session. (INTERSECT’s own lesson repos
+include both.)</p>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -986,16 +1215,21 @@ instructions.</p>
 practice, each with its own intended purpose.</li>
 <li>A project must pick the documentation that makes the most sense for
 its use case and domain.</li>
+<li>The README is the front door; docstrings document the <em>why</em>;
+LICENSE and CITATION.cff make research software reusable and
+citable.</li>
+<li>GenAI can draft documentation quickly, but you must review it for
+accuracy.</li>
 </ul>
 </div>
 </div>
 </div>
 </section></section><section id="aio-tools"><p>Content from <a href="tools.html">Documentation Tools</a></p>
 <hr>
-<p>Last updated on 2025-07-15 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/tools.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 18 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1077,44 +1311,39 @@ class and its methods:</p>
 <div class="section level3">
 <h3 id="ides">IDEs<a class="anchor" aria-label="anchor" href="#ides"></a>
 </h3>
-<p>Modern integrated development environments (IDEs) are applications
-that combine text editing with other useful tools like building,
-testing, etc. Many also enable automatic documentation generation in
-some variety. To name a few:</p>
-<table class="table">
-<colgroup>
-<col width="25%">
-<col width="75%">
-</colgroup>
-<thead><tr>
-<th>IDE</th>
-<th>Languages</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><a href="https://code.visualstudio.com/" class="external-link">VSCode</a></td>
-<td>PHP, HTML, CSS, SCSS, Less, JavaScript, JSON, TypeScript, Markdown,
-PowerShell, C++, Java, Python, Go, T-SQL, C#, .NET Core, etc.</td>
-</tr>
-<tr>
-<td><a href="https://netbeans.apache.org/" class="external-link">NetBeans</a></td>
-<td>C, C++, C++11, Fortran, HTML 5, Java, PHP, etc.</td>
-</tr>
-<tr>
-<td><a href="https://www.jetbrains.com/pycharm/" class="external-link">PyCharm</a></td>
-<td>AngularJS, Coffee Script, CSS, Cython, HTML, JavaScript, Node.js,
-Python, TypeScript</td>
-</tr>
-<tr>
-<td><a href="https://www.eclipse.org/ide/" class="external-link">Eclipse</a></td>
-<td>C, C++, Java, Perl, PHP, Python, Ruby, etc.</td>
-</tr>
-</tbody>
-</table>
-<p>Many of these IDEs incorporate documentation generators that follow
-standard style guides. For example, the <a href="https://www.spyder-ide.org/" class="external-link">Spyder IDE</a> will begin to generate
-docstrings based on your specified style guide.</p>
-<figure><img src="../fig/spyder-docstring.png" alt="Spyder IDE docstring settings - dropdown includes different types of docstrings; NumPy style is selected" class="figure mx-auto d-block"></figure>
+<p>Modern integrated development environments (IDEs) combine text
+editing with tools like building, testing, and — usefully here —
+<strong>docstring generation</strong>. Popular options include <a href="https://code.visualstudio.com/" class="external-link">VSCode</a>, <a href="https://www.jetbrains.com/pycharm/" class="external-link">PyCharm</a>, <a href="https://netbeans.apache.org/" class="external-link">NetBeans</a>, and <a href="https://www.eclipse.org/ide/" class="external-link">Eclipse</a>; most support many
+languages via extensions.</p>
+<p>Many incorporate documentation generators that follow standard style
+guides. For example, the <a href="https://www.spyder-ide.org/" class="external-link">Spyder
+IDE</a> will present the framework for a docstring in your chosen
+style:</p>
+<figure><img src="../fig/spyder-docstring.png" alt="Spyder IDE docstring settings - dropdown includes different types of docstrings; NumPy style is selected" class="figure mx-auto d-block"></figure><div id="genai-powered-assistants" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="genai-powered-assistants" class="callout-inner">
+<h3 class="callout-title">GenAI-powered assistants</h3>
+<div class="callout-content">
+<p>The newest tools in this category are AI coding assistants (GitHub
+Copilot, Cursor, and the docstring features now built into many IDEs).
+They can draft a docstring or comment from your code in one keystroke.
+Two caveats carry over from earlier:</p>
+<ul>
+<li>
+<strong>Verify it.</strong> The assistant infers intent from code —
+it can describe behavior the code doesn’t actually have. You own the
+review.</li>
+<li>
+<strong>Mind the data.</strong> For research code, check your
+group’s and tool’s policy before sending unpublished or sensitive code
+to a third-party service.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="automated-generation">Automated Generation<a class="anchor" aria-label="anchor" href="#automated-generation"></a>
@@ -1148,7 +1377,10 @@ line and have a clone of your practice repository.</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="co"># MacOS/Linux</span></span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="ex">python</span> <span class="at">-m</span> venv virtual-python</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="bu">source</span> virtual-python/bin/activate</span></code></pre>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="bu">source</span> virtual-python/bin/activate</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a><span class="co"># Windows</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a><span class="ex">python</span> <span class="at">-m</span> venv virtual-python</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1" aria-label="code-block-2-6"></a><span class="ex">virtual-python\Scripts\activate</span></span></code></pre>
 </div>
 <ol style="list-style-type: decimal">
 <li>Install sphinx: <code>pip install sphinx</code>
@@ -1175,91 +1407,141 @@ else as you desire.)</li>
 <div class="section level3">
 <h3 id="automated-publishing">Automated Publishing<a class="anchor" aria-label="anchor" href="#automated-publishing"></a>
 </h3>
-<p>Potentially the most helpful method of streamlining the documentation
-process is to implement automated publishing. By implementing this, when
-a new feature or change is merged into your code base, your
-documentation will be generated and published automatically. Two popular
-documentation hosting tools are:</p>
-<ol style="list-style-type: decimal">
-<li><a href="https://readthedocs.org/" class="external-link">ReadtheDocs</a></li>
-<li><a href="https://pages.github.com/" class="external-link">GitHub Pages</a></li>
-</ol>
-<p>Both of these services will publish documentation from open source
-software for free. They can be set up to publish the most recent version
-of all documentation as soon as a new change is introduced to the main
-code.</p>
-<p>We will practice doing this with GitHub Pages. Before getting into
-the exercise, you will need to make sure GitHub Pages is activated on
-your practice repository.</p>
-<ol style="list-style-type: decimal">
-<li>
-<em>Make a <code>gh-pages</code> branch</em>. Either from the GUI or
-through command line, make a new branch named <code>gh-pages</code>. In
-the GUI, you would do this by clicking on the branches link: <img src="../fig/branches.png" alt="On the main repository page, the branches link is circled (directly to the right of the `main` branch dropdown)" class="figure">
-Then click on “New branch”: <img src="../fig/new-branch.png" alt='On the branches page, the "New branch" button on the top-right is circled' class="figure">
-Name it <code>gh-pages</code>: <img src="../fig/gh-pages-branch.png" alt='Create a new branch pop-up dialog with the name `gh-pages` typed into "New branch name" text box' class="figure">
-</li>
-<li>
-<em>Set up GitHub to build from that branch</em>. In the GUI, go to
-“Settings” &gt; “Pages”: <img src="../fig/gh-pages-setting.png" alt='Under the Settings tab, the Pages section is selected. Shows option for "Build and deployment" that include Source, branch, and Custom domain' class="figure">
-Change the settings to “Source: Deploy from branch”, “Branch: gh-pages”,
-and “directory /docs”. Then hit “Save.” <img src="../fig/gh-pages-final-settings.png" alt='GitHub Pages modified settings - Source is set to "Deploy from a branch", Branch is set to `gh-pages`, and directory is set to `/docs`' class="figure">
-</li>
-</ol>
-<p>Now complete the following exercise!</p>
-<div id="practice-sphinx-to-github-pages" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
-<div id="practice-sphinx-to-github-pages" class="callout-inner">
-<h3 class="callout-title">PRACTICE: Sphinx to GitHub Pages</h3>
-<div class="callout-content">
-<p>Now that we have some starter documentation, let’s publish it to
-GitHub Pages.</p>
-<p><em>NOTE</em>: These steps assume you are working from the command
-line and have a clone of your practice repository.</p>
-<ol style="list-style-type: decimal">
-<li>Make a local copy of the <code>gh-pages</code> branch:
-<code>git -b checkout gh-pages</code>
-</li>
-<li>Set your local copy to track GitHub’s copy:
-<code>git push --set-upstream origin gh-pages</code>
-</li>
-<li>Move to the <code>docs</code> directory and clean up the previous
-build: <code>cd docs &amp;&amp; make clean</code>
-</li>
-<li>Change the default build location: For <code>Makefile</code> and
-<code>make.bat</code>, change <code>BUILDDIR = _build</code> to
-<code>BUILDDIR = .</code>
-</li>
-<li>Make your documentation: <code>make html</code>
-</li>
-<li>Make a file <code>index.html</code> in the <code>docs</code>
-directory with the content:
-<code>&lt;meta http-equiv="refresh" content="0; url=./html/index.html" /&gt;</code>
-(<em>NOTE</em>: This tells GitHub to use the
-<code>html/index.html</code> file as the main page.)</li>
-<li>Add all your changes, commit, and push:
-<code>git add docs/ &amp;&amp; git commit -m "Add documentation to GitHub Pages" &amp;&amp; git push</code>
-</li>
-<li>Wait a minute or two, then view your documentation at <a href="https://YOURUSERNAME.github.io/intersect-practice-repo/html/index.html" class="external-link uri">https://YOURUSERNAME.github.io/intersect-practice-repo/html/index.html</a>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="what-happened-to-the-styling" class="callout">
+<p>The biggest time-saver is <strong>automated publishing</strong>: when
+a change is merged, your documentation rebuilds and goes live with no
+manual steps. Two free services dominate for open-source projects:</p>
+<table class="table">
+<colgroup>
+<col width="27%">
+<col width="30%">
+<col width="42%">
+</colgroup>
+<thead><tr>
+<th>Service</th>
+<th>Best for</th>
+<th>How it works</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><a href="https://readthedocs.org/" class="external-link">Read the Docs</a></td>
+<td>Sphinx/MkDocs projects</td>
+<td>Connect your repo once; it rebuilds on every push.</td>
+</tr>
+<tr>
+<td><a href="https://pages.github.com/" class="external-link">GitHub Pages</a></td>
+<td>Any static site</td>
+<td>A GitHub Actions workflow builds and deploys your docs.</td>
+</tr>
+</tbody>
+</table>
+<p>The modern approach for <strong>both</strong> is the same in spirit:
+you commit your docs source, and a hosted service rebuilds them
+automatically. You no longer need to hand-manage a <code>gh-pages</code>
+branch or commit built HTML — the recommended path is to let the service
+(or a GitHub Actions workflow) do the building.</p>
+<div id="easiest-for-sphinx-read-the-docs" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div id="what-happened-to-the-styling" class="callout-inner">
-<h3 class="callout-title">What happened to the styling?!</h3>
+<div id="easiest-for-sphinx-read-the-docs" class="callout-inner">
+<h3 class="callout-title">Easiest for Sphinx: Read the Docs</h3>
 <div class="callout-content">
-<p>GitHub renders styles in a unique way using <a href="https://jekyllrb.com/" class="external-link">Jekyll</a>. We can turn this off by adding
-an empty <code>.nojekyll</code> file in the <code>docs</code>
-directory.</p>
+<p>For a Sphinx project, the fastest route to published docs is Read the
+Docs:</p>
+<ol style="list-style-type: decimal">
+<li>Push your <code>docs/</code> directory (from the Sphinx exercise
+above) to GitHub.</li>
+<li>Sign in to <a href="https://readthedocs.org/" class="external-link">readthedocs.org</a>
+with your GitHub account.</li>
+<li>Click <strong>Import a Project</strong>, pick your repo, and
+<strong>Build</strong>.</li>
+</ol>
+<p>That’s it — Read the Docs rebuilds on every push. No branch juggling,
+no <code>.nojekyll</code>, no hand-edited <code>Makefile</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="github-pages-for-a-personal-website">GitHub Pages for a Personal Website<a class="anchor" aria-label="anchor" href="#github-pages-for-a-personal-website"></a>
+</h3>
+<p>The exact GitHub Pages machinery that publishes project docs can also
+publish a <strong>personal website</strong> — a place for your CV,
+publications, software, and a bit about you. For a researcher or RSE,
+this is one of the highest-return things you can set up, and it costs
+nothing to host.</p>
+<p>The trick is GitHub’s special <strong>user site</strong> repository.
+If you name a repo <code>YOURUSERNAME.github.io</code>, GitHub
+automatically publishes it at
+<code>https://YOURUSERNAME.github.io</code>. You don’t have to write a
+site from scratch — there are excellent academic/personal templates you
+can fork and fill in:</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Template</th>
+<th>Good for</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/academicpages/academicpages.github.io" class="external-link">academicpages</a></td>
+<td>Academic CV, publications, talks (very popular for researchers)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/alshedivat/al-folio" class="external-link">al-folio</a></td>
+<td>Clean academic portfolio with publications</td>
+</tr>
+<tr>
+<td><a href="https://github.com/barryclark/jekyll-now" class="external-link">Jekyll
+Now</a></td>
+<td>A simple blog/personal page, minimal setup</td>
+</tr>
+<tr>
+<td><a href="https://pages.github.com/themes/" class="external-link">GitHub Pages
+themes</a></td>
+<td>Built-in one-click themes for a quick start</td>
+</tr>
+</tbody>
+</table>
+<div id="practice-optional-take-home-build-your-site" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="practice-optional-take-home-build-your-site" class="callout-inner">
+<h3 class="callout-title">PRACTICE (Optional / Take-home): Build
+<em>your</em> site</h3>
+<div class="callout-content">
+<p>You almost certainly won’t finish this in the session — and that’s
+fine. The goal is to know this is <strong>something you can do</strong>,
+and to have the starting point. Pick whichever appeals:</p>
+<p><strong>Option A — A personal website (recommended for the long
+term):</strong></p>
+<ol style="list-style-type: decimal">
+<li>Find a template above that you like and <strong>fork</strong> it (or
+use GitHub’s “Use this template”).</li>
+<li>Rename the repository to <code>YOURUSERNAME.github.io</code>.</li>
+<li>Edit the config/Markdown files to add your name, bio, and a project
+or two.</li>
+<li>Visit <code>https://YOURUSERNAME.github.io</code> to see it
+live.</li>
+</ol>
+<p><strong>Option B — Publish the project docs you just
+made:</strong></p>
+<ul>
+<li>
+<strong>Read the Docs:</strong> follow the three steps in the
+callout above to publish your Sphinx docs.</li>
+<li>
+<strong>GitHub Pages via Actions:</strong> in your repo, enable
+Pages (Settings &gt; Pages &gt; “Build and deployment” &gt;
+<strong>GitHub Actions</strong>) and add the starter workflow GitHub
+suggests.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1273,10 +1555,17 @@ documentation.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Documentation tools vary from styles to text editors to
-automation.</li>
+<li>Documentation tools vary from style guides to IDEs to generators
+(Sphinx, Doxygen) to automated publishing.</li>
 <li>Many tools have quick-start capabilities to get small or new
 projects started with better documentation processes.</li>
+<li>Modern hosting (Read the Docs, GitHub Pages via Actions) rebuilds
+and publishes docs automatically — no manual branch management
+needed.</li>
+<li>The same GitHub Pages tech can host a free personal website
+(<code>YOURUSERNAME.github.io</code>) from a template.</li>
+<li>AI assistants can generate docstrings quickly, but always verify the
+output and mind data-sharing policies.</li>
 </ul>
 </div>
 </div>
@@ -1332,8 +1621,8 @@ projects started with better documentation processes.</li>
   "url": "https://INTERSECT-training.github.io/Documentation/instructor/aio.html",
   "identifier": "https://INTERSECT-training.github.io/Documentation/instructor/aio.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2026-06-16",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>
