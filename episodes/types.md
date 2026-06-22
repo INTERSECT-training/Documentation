@@ -1,6 +1,6 @@
 ---
 title: "Types of Software Documentation"
-teaching: 5
+teaching: 7
 exercises: 5
 
 ---
@@ -8,6 +8,7 @@ exercises: 5
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Become familiar with the two main categories of software documentation and how they differ.
+- Recognize the four modes of the Diátaxis framework.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -15,6 +16,7 @@ exercises: 5
 
 - What are the different types of software documentation?
 - How do the types differ?
+- How can the Diátaxis framework help organize documentation?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -54,14 +56,33 @@ the categories above?
 
 | Category | Intent | Target Audience |
 | -------- | ------ | --------------- |
-| Developer | To inform developers how to interface with a given software package throughout the entire software development lifecycle, including team processes. | Developers, stakeholders, team members, technical members of project |
-| User | To inform users how to be more successful in the usage of a software package from installation to usage, including examples, troubleshooting, etc. | End-users, stakeholders |
+| Developer | Inform developers how to interface with a software package across the whole development lifecycle, including team processes. | Developers, technical stakeholders, team members |
+| User | Help users succeed with a package from installation through everyday use, including examples and troubleshooting. | End-users, stakeholders |
+
+## A Modern Take: The Diátaxis Framework
+
+The developer/user split tells you *who* you're writing for. [Diátaxis](https://diataxis.fr/)
+is a popular complementary framework that asks *what kind of help* the reader needs right now.
+It identifies **four modes**:
+
+| Mode | Serves | Answers... | Example |
+|------|--------|----------|---------|
+| **Tutorial** | Learning | "Teach me, step by step." | A guided first project |
+| **How-to guide** | A task | "How do I accomplish X?" | "How to connect to the database" |
+| **Reference** | Looking up | "What exactly does this do?" | API docs, config options |
+| **Explanation** | Understanding | "Why does it work this way?" | A design-decisions write-up |
+
+The key insight: these modes have **different goals and shouldn't be mixed**. A tutorial
+clogged with reference detail stops teaching; reference docs padded with explanation get hard
+to scan. Diátaxis maps neatly onto the categories above — tutorials and how-to guides lean
+*user*, reference and explanation often serve *both* — so you can use both lenses together.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - There are two primary categories for documentation: developer and user.
-- Developer documentation is intended to describe how developers should interface with a given software package.
-- User documentation is intended to help users be more successful in the usage of a software package.
+- Developer documentation describes how developers should interface with a software package.
+- User documentation helps users be more successful in using a software package.
+- The Diátaxis framework adds a second lens — tutorials, how-to guides, reference, and explanation — and warns against mixing these modes.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

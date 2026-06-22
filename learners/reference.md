@@ -10,6 +10,13 @@
 - Martin, R. C. (2009). Clean code: a handbook of agile software craftsmanship. Pearson Education.
 - Sommerville, I. (2001). Software documentation. Software engineering, 2, 143-154.
 
+## Frameworks & Guides
+
+- [Diátaxis](https://diataxis.fr/) — the tutorials / how-to / reference / explanation framework
+- [Citation File Format (CITATION.cff)](https://citation-file-format.github.io/) — make your software citable
+- [Make a README](https://www.makeareadme.com/) — what to put in a README
+- [Choose a License](https://choosealicense.com/) — picking an open-source license
+
 ## Documentation Tools
 
 - [Daux.io](http://daux.io/index.html)
@@ -18,4 +25,12 @@
 - [MkDocs](https://www.mkdocs.org/)
 - [ReadtheDocs](https://readthedocs.org/)
 - [Sphinx](https://www.sphinx-doc.org/en/master/)
+
+## GenAI for Documentation
+
+- General-purpose assistants (e.g., ChatGPT, Claude) can draft docstrings, READMEs, and
+  tutorials — always review for accuracy and supply real project context.
+- In-editor assistants (e.g., GitHub Copilot, IDE docstring generators) draft inline docs
+  from your code. Check your group's and the tool's data-sharing policy before using them on
+  unpublished or sensitive research code.
 

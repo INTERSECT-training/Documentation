@@ -1,13 +1,14 @@
 ---
 title: "Documentation in Practice"
-teaching: 5
-exercises: 10
+teaching: 8
+exercises: 14
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Become familiar with real-life examples of documentation.
 - Practice writing different kinds of documentation.
+- Understand the role of the README, docstrings, and citation/licensing files.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -15,8 +16,42 @@ exercises: 10
 
 - What does developer documentation look like in practice?
 - What does user documentation look like in practice?
+- What belongs in a README, a docstring, and a citation file?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Start the Right Way: the README
+
+Before any framework or tool, almost every project's documentation begins with a single
+file: the **README**. It's the first thing a visitor sees on GitHub, and for many research
+projects it's the *only* documentation that exists. A good README answers a newcomer's
+questions fast:
+
+| Section | Answers |
+|---------|---------|
+| **What and why** | What does this do, and why would I use it? |
+| **Install** | How do I get it running? |
+| **Usage / quick example** | Show me the simplest thing that works. |
+| **License** | Can I use it, and how? |
+| **How to cite** | How do I give credit in a paper? |
+| **Contributing / contact** | How do I report a bug or get help? |
+
+You don't need all of these on day one — but a README that covers *what/why* and a *quick
+example* already puts you ahead of most research code.
+
+## Document the *Why*, Not the *What*: Docstrings and Comments
+
+Two kinds of in-code documentation do most of the day-to-day work:
+
+- **Docstrings** describe *what a function/class does and how to use it* — its inputs,
+  outputs, and behavior. They're written for the person *calling* your code (and power tools
+  like Sphinx, covered next episode).
+- **Inline comments** explain *why* a particular piece of code is the way it is — the
+  non-obvious decision, the workaround, the edge case.
+
+The better practice: **comment the *why*, not the *what***. Code already says *what* it does;
+a comment like `# add 1 to i` is noise. A comment explaining *why* you add 1 (an off-by-one
+in an upstream API, say) is gold.
 
 ## Developer Documentation Examples
 
@@ -46,7 +81,12 @@ class EulersMethod:
         return y_j, x_j
 ```
 
-**BONUS**: How would you improve this code to make it more clear?
+**Bonus**: How would you improve this code to make it more clear?
+
+**GenAI Bonus**: Ask an LLM to write a docstring for this class. Then *critique* its output:
+Did it correctly describe what `deriv` and `approx` actually do? Did it invent behavior the
+code doesn't have? Did it explain the *why*? Fix what it got wrong. This is the review skill
+that matters most when documenting with AI.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -79,10 +119,29 @@ Keep in mind culture, context, and experience when writing your instructions.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Make It Citable: CITATION and LICENSE
+
+Two small files matter a lot for *research* software:
+
+- **`LICENSE`** tells others what they're legally allowed to do with your code. Without one,
+  the default is "all rights reserved" — others can't reuse it, even if your repo is public.
+- **`CITATION.cff`** is a simple, structured ([Citation File Format](https://citation-file-format.github.io/))
+  file telling people how to cite your software. GitHub reads it and shows a "Cite this
+  repository" button automatically — so your work gets credited correctly in papers.
+
+These pair naturally with the contributing guides and pull-request workflow from the previous
+session. (INTERSECT's own lesson repos include both.)
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - There are numerous examples of different types of documentation in practice, each with its own intended purpose.
 - A project must pick the documentation that makes the most sense for its use case and domain.
+- The README is the front door; docstrings document the *why*; LICENSE and CITATION.cff make research software reusable and citable.
+- GenAI can draft documentation quickly, but you must review it for accuracy.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
