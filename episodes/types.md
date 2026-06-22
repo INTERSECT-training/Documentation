@@ -75,14 +75,14 @@ It identifies **four modes**:
 The key insight: these modes have **different goals and shouldn't be mixed**. A tutorial
 clogged with reference detail stops teaching; reference docs padded with explanation get hard
 to scan. Diátaxis maps neatly onto the categories above — tutorials and how-to guides lean
-*user*, reference and explanation often serve *both* — so you can use both lenses together.
+*user*, reference and explanation often serve *both*.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - There are two primary categories for documentation: developer and user.
 - Developer documentation describes how developers should interface with a software package.
 - User documentation helps users be more successful in using a software package.
-- The Diátaxis framework adds a second lens — tutorials, how-to guides, reference, and explanation — and warns against mixing these modes.
+- The Diátaxis framework reframes the categories — tutorials, how-to guides, reference, and explanation — and warns against mixing these modes.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
