@@ -30,25 +30,39 @@ Most people are familiar with this concept and know good documentation when
 they see it. More difficult, however, is how to _write_ good documentation.
 
 In this lesson, students will learn about the different types of software
-development and practices and tools to enable better documentation.
+documentation, plus the practices and tools that enable better documentation.
 
 ## The Benefits of Good Documentation
 
-No one would argue that documentation is useful, but here are some of the
-benefits of good documentation:
+No one would argue that documentation isn't useful. The payoffs:
 
-- _Better Maintainability_: Undocumented or incorrectly documented code can do more harm than good. It is difficult to maintain code that does not have sufficient and accurate documentation. Good documentation clarifies what the code is doing in each part and makes it easier to change.
-- _Improved Team Productivity_: Especially for new team members, sufficiently good documentation can help get everyone on the same page and new members up to speed.
-- _Increased Code Quality_: Documenting what you think your code does helps to clear up inconsistencies and can lead developers to refactor something that is needlessly complicated. Overall, documentation has a positive effect on overall quality.
+| Benefit | Why it matters |
+|---------|----------------|
+| **Better maintainability** | Clarifies what each part of the code does, making it safer and easier to change. |
+| **Improved team productivity** | Gets everyone on the same page and brings new members up to speed faster. |
+| **Increased code quality** | Writing down what code *should* do surfaces inconsistencies and prompts refactoring. |
 
 ## The Challenges to Making Good Documentation
 
-As anyone would tell you, documentation isn't easy. Some of the challenges
-involved are:
+...but documentation isn't easy. The common obstacles:
 
-- _Time_: Writing good documentation can take time, and especially for projects with unreliable or limited funding, it can become a afterthought. It also introduces potential technical debt if interfaces or functionality change.
-- _Skill_: Writing good documentation is _hard_. It must be practiced and practiced and practiced. People can become jaded by how much practice it takes to become truly skilled at documenting well.
-- _Process_: Does writing documentation feel unnatural or "clunky" to you? Without proper processes, writing documentation can feel like it's wasting your precious time.
+| Challenge | What it looks like |
+|-----------|--------------------|
+| **Time** | It competes with feature work, and falls out of date as interfaces change (technical debt). |
+| **Skill** | Writing clearly is genuinely hard and takes practice — it's easy to get discouraged. |
+| **Process** | Without a habit or workflow, documenting feels "clunky" and like wasted effort. |
+
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Where does genAI fit?
+
+Generative AI (LLMs like ChatGPT and Claude) is changing this practice. It can draft a
+docstring, a README, or a tutorial in seconds — which knocks down the **time** and **skill**
+barriers above. But cheap first drafts shift the real work from *writing* to **reviewing**:
+the human still has to verify that what the AI wrote is *correct*. We'll return to this
+thread throughout the lesson.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 

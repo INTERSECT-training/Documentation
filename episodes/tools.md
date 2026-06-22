@@ -1,7 +1,7 @@
 ---
 title: "Documentation Tools"
-teaching: 10
-exercises: 15
+teaching: 8
+exercises: 10
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -65,22 +65,31 @@ class EulersMethod:
 
 ### IDEs
 
-Modern integrated development environments (IDEs) are applications that
-combine text editing with other useful tools like building, testing, etc. Many
-also enable automatic documentation generation in some variety. To name a few:
+Modern integrated development environments (IDEs) combine text editing with tools like
+building, testing, and — usefully here — **docstring generation**. Popular options include
+[VSCode](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/),
+[NetBeans](https://netbeans.apache.org/), and [Eclipse](https://www.eclipse.org/ide/); most
+support many languages via extensions.
 
-| IDE | Languages |
-| --- | --------- |
-| [VSCode](https://code.visualstudio.com/) |  PHP, HTML, CSS, SCSS, Less, JavaScript, JSON, TypeScript, Markdown, PowerShell, C++, Java, Python, Go, T-SQL, C#, .NET Core, etc. |
-| [NetBeans](https://netbeans.apache.org/) | C, C++, C++11, Fortran, HTML 5, Java, PHP, etc. |
-| [PyCharm](https://www.jetbrains.com/pycharm/) | AngularJS, Coffee Script, CSS, Cython, HTML, JavaScript, Node.js, Python, TypeScript |
-| [Eclipse](https://www.eclipse.org/ide/) | C, C++, Java, Perl, PHP, Python, Ruby, etc. |
-
-Many of these IDEs incorporate documentation generators that follow standard
-style guides. For example, the [Spyder IDE](https://www.spyder-ide.org/) will
-begin to generate docstrings based on your specified style guide.
+Many incorporate documentation generators that follow standard style guides. For example, the
+[Spyder IDE](https://www.spyder-ide.org/) will present the framework for a docstring in your chosen style:
 
 ![](fig/spyder-docstring.png){alt='Spyder IDE docstring settings - dropdown includes different types of docstrings; NumPy style is selected'}
+
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## GenAI-powered assistants
+
+The newest tools in this category are AI coding assistants (GitHub Copilot, Cursor, and the
+docstring features now built into many IDEs). They can draft a docstring or comment from your
+code in one keystroke. Two caveats carry over from earlier:
+
+- **Verify it.** The assistant infers intent from code — it can describe behavior the code
+  doesn't actually have. You own the review.
+- **Mind the data.** For research code, check your group's and tool's policy before sending
+  unpublished or sensitive code to a third-party service.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Automated Generation
 
@@ -108,6 +117,9 @@ have a clone of your practice repository.
 # MacOS/Linux
 python -m venv virtual-python
 source virtual-python/bin/activate
+# Windows
+python -m venv virtual-python
+virtual-python\Scripts\activate
 ```
 1. Install sphinx: `pip install sphinx`
 2. Move to your practice directory: `cd /path/to/your/practice/repository`
@@ -121,76 +133,85 @@ source virtual-python/bin/activate
 
 ### Automated Publishing
 
-Potentially the most helpful method of streamlining the documentation process
-is to implement automated publishing. By implementing this, when a new feature
-or change is merged into your code base, your documentation will be generated
-and published automatically. Two popular documentation hosting tools are:
+The biggest time-saver is **automated publishing**: when a change is merged, your
+documentation rebuilds and goes live with no manual steps. Two free services dominate for
+open-source projects:
 
-1. [ReadtheDocs](https://readthedocs.org/)
-1. [GitHub Pages](https://pages.github.com/)
+| Service | Best for | How it works |
+|---------|----------|--------------|
+| [Read the Docs](https://readthedocs.org/) | Sphinx/MkDocs projects | Connect your repo once; it rebuilds on every push. |
+| [GitHub Pages](https://pages.github.com/) | Any static site | A GitHub Actions workflow builds and deploys your docs. |
 
-Both of these services will publish documentation from open source software
-for free. They can be set up to publish the most recent version of all
-documentation as soon as a new change is introduced to the main code.
-
-We will practice doing this with GitHub Pages. Before getting into the
-exercise, you will need to make sure GitHub Pages is activated on your
-practice repository.
-
-1. _Make a `gh-pages` branch_.
-   Either from the GUI or through command line, make a new branch named `gh-pages`.
-   In the GUI, you would do this by clicking on the branches link:
-   ![](fig/branches.png){alt='On the main repository page, the branches link is circled (directly to the right of the `main` branch dropdown)'}
-   Then click on "New branch":
-   ![](fig/new-branch.png){alt='On the branches page, the "New branch" button on the top-right is circled'}
-   Name it `gh-pages`:
-   ![](fig/gh-pages-branch.png){alt='Create a new branch pop-up dialog with the name `gh-pages` typed into "New branch name" text box'}
-2. _Set up GitHub to build from that branch_.
-   In the GUI, go to "Settings" > "Pages":
-   ![](fig/gh-pages-setting.png){alt='Under the Settings tab, the Pages section is selected. Shows option for "Build and deployment" that include Source, branch, and Custom domain'}
-   Change the settings to "Source: Deploy from branch", "Branch: gh-pages", and
-   "directory /docs". Then hit "Save."
-   ![](fig/gh-pages-final-settings.png){alt='GitHub Pages modified settings - Source is set to "Deploy from a branch", Branch is set to `gh-pages`, and directory is set to `/docs`'}
-
-Now complete the following exercise!
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## PRACTICE: Sphinx to GitHub Pages
-
-Now that we have some starter documentation, let's publish it to
-GitHub Pages.
-
-_NOTE_: These steps assume you are working from the command line and
-have a clone of your practice repository.
-
-1. Make a local copy of the `gh-pages` branch: `git -b checkout gh-pages`
-2. Set your local copy to track GitHub's copy: `git push --set-upstream origin gh-pages`
-3. Move to the `docs` directory and clean up the previous build: `cd docs && make clean`
-4. Change the default build location: For `Makefile` and `make.bat`, change `BUILDDIR = _build` to `BUILDDIR = .`
-5. Make your documentation: `make html`
-6. Make a file `index.html` in the `docs` directory with the content:
-  `<meta http-equiv="refresh" content="0; url=./html/index.html" />` (_NOTE_: This tells GitHub to use the `html/index.html` file as the main page.)
-7. Add all your changes, commit, and push: `git add docs/ && git commit -m "Add documentation to GitHub Pages" && git push`
-8. Wait a minute or two, then view your documentation at https://YOURUSERNAME.github.io/intersect-practice-repo/html/index.html
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
+The modern approach for **both** is the same in spirit: you commit your docs source, and a
+hosted service rebuilds them automatically. You no longer need to hand-manage a `gh-pages`
+branch or commit built HTML — the recommended path is to let the service (or a GitHub Actions
+workflow) do the building.
 
 ::::::::::::::::::::::::::::::::::::::::::  callout
 
-## What happened to the styling?!
+## Easiest for Sphinx: Read the Docs
 
-GitHub renders styles in a unique way using [Jekyll](https://jekyllrb.com/). We can turn this
-off by adding an empty `.nojekyll` file in the `docs` directory.
+For a Sphinx project, the fastest route to published docs is Read the Docs:
+
+1. Push your `docs/` directory (from the Sphinx exercise above) to GitHub.
+2. Sign in to [readthedocs.org](https://readthedocs.org/) with your GitHub account.
+3. Click **Import a Project**, pick your repo, and **Build**.
+
+That's it — Read the Docs rebuilds on every push. No branch juggling, no `.nojekyll`, no
+hand-edited `Makefile`.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
+
+### GitHub Pages for a Personal Website
+
+The exact GitHub Pages machinery that publishes project docs can also
+publish a **personal website** — a place for your CV, publications, software, and a bit
+about you. For a researcher or RSE, this is one of the highest-return things you can set up,
+and it costs nothing to host.
+
+The trick is GitHub's special **user site** repository. If you name a repo
+`YOURUSERNAME.github.io`, GitHub automatically publishes it at `https://YOURUSERNAME.github.io`.
+You don't have to write a site from scratch — there are excellent academic/personal templates
+you can fork and fill in:
+
+| Template | Good for |
+|----------|----------|
+| [academicpages](https://github.com/academicpages/academicpages.github.io) | Academic CV, publications, talks (very popular for researchers) |
+| [al-folio](https://github.com/alshedivat/al-folio) | Clean academic portfolio with publications |
+| [Jekyll Now](https://github.com/barryclark/jekyll-now) | A simple blog/personal page, minimal setup |
+| [GitHub Pages themes](https://pages.github.com/themes/) | Built-in one-click themes for a quick start |
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## PRACTICE (Optional / Take-home): Build *your* site
+
+You almost certainly won't finish this in the session — and that's fine. The goal is to know
+this is **something you can do**, and to have the starting point. Pick whichever appeals:
+
+**Option A — A personal website (recommended for the long term):**
+
+1. Find a template above that you like and **fork** it (or use GitHub's "Use this template").
+2. Rename the repository to `YOURUSERNAME.github.io`.
+3. Edit the config/Markdown files to add your name, bio, and a project or two.
+4. Visit `https://YOURUSERNAME.github.io` to see it live.
+
+**Option B — Publish the project docs you just made:**
+
+- **Read the Docs:** follow the three steps in the callout above to publish your Sphinx docs.
+- **GitHub Pages via Actions:** in your repo, enable Pages (Settings > Pages > "Build and
+  deployment" > **GitHub Actions**) and add the starter workflow GitHub suggests.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 That's it! You now know some useful tips and tricks for making better documentation.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Documentation tools vary from styles to text editors to automation.
+- Documentation tools vary from style guides to IDEs to generators (Sphinx, Doxygen) to automated publishing.
 - Many tools have quick-start capabilities to get small or new projects started with better documentation processes.
+- Modern hosting (Read the Docs, GitHub Pages via Actions) rebuilds and publishes docs automatically — no manual branch management needed.
+- The same GitHub Pages tech can host a free personal website (`YOURUSERNAME.github.io`) from a template.
+- AI assistants can generate docstrings quickly, but always verify the output and mind data-sharing policies.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
