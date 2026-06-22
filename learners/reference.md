@@ -10,7 +10,7 @@
 - Martin, R. C. (2009). Clean code: a handbook of agile software craftsmanship. Pearson Education.
 - Sommerville, I. (2001). Software documentation. Software engineering, 2, 143-154.
 
-## Frameworks & Guides
+## Frameworks and Guides
 
 - [Diátaxis](https://diataxis.fr/) — the tutorials / how-to / reference / explanation framework
 - [Citation File Format (CITATION.cff)](https://citation-file-format.github.io/) — make your software citable
