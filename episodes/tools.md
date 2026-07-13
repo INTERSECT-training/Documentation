@@ -112,10 +112,6 @@ class EulersMethod:
     def approx(self, y, x, h):
         """Take a single Euler step from a known point.
 
-        Note:
-            Parameters are ordered (y, x, h), which differs from the (x, y)
-            order used by ``deriv`` — worth aligning for clarity (see Bonus).
-
         Args:
             y: The current value of the function.
             x: The current independent variable.
