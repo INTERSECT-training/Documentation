@@ -48,17 +48,40 @@ style guides have specific recommendations for in-line documentation like code c
 Google has many style guides, including a Python guide for
 [writing docstrings](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings).
 
-Using the Google style guide, write a docstring for the following class and its methods:
+Google's Python guide is a good example, but the same principles apply in other
+languages — R users can follow an equivalent convention such as
+[roxygen2](https://roxygen2.r-lib.org/). Write documentation for the class/functions
+and their methods below:
+
+::::::::::::::::::::::::::::::::::::::::::::::::: group-tab
+
+### Python
 
 ```python
 class EulersMethod:
-   def deriv(self, x, y):
-       return y**2 + y*x + x**3
-   def approx(self, y, x, h):
-       y_j = y + h*self.deriv(x, y)
-       x_j = x + h
-       return y_j, x_j
+    def deriv(self, x, y):
+        return y**2 + y*x + x**3
+    def approx(self, y, x, h):
+        y_j = y + h*self.deriv(x, y)
+        x_j = x + h
+        return y_j, x_j
 ```
+
+### R
+
+```r
+deriv <- function(x, y) {
+  y^2 + y*x + x^3
+}
+
+approx <- function(y, x, h) {
+  y_j <- y + h * deriv(x, y)
+  x_j <- x + h
+  list(y_j = y_j, x_j = x_j)
+}
+```
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

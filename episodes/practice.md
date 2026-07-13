@@ -71,6 +71,10 @@ a particular step size `h`, and the derivative of the function.
 
 Write some documentation for the following code snippet:
 
+::::::::::::::::::::::::::::::::::::::::::::::::: group-tab
+
+### Python
+
 ```python
 class EulersMethod:
     def deriv(self, x, y):
@@ -81,9 +85,25 @@ class EulersMethod:
         return y_j, x_j
 ```
 
+### R
+
+```r
+deriv <- function(x, y) {
+  y^2 + y*x + x^3
+}
+
+approx <- function(y, x, h) {
+  y_j <- y + h * deriv(x, y)
+  x_j <- x + h
+  list(y_j = y_j, x_j = x_j)
+}
+```
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 **Bonus**: How would you improve this code to make it more clear?
 
-**GenAI Bonus**: Ask an LLM to write a docstring for this class. Then *critique* its output:
+**GenAI Bonus**: Ask an LLM to write documentation for this code. Then *critique* its output:
 Did it correctly describe what `deriv` and `approx` actually do? Did it invent behavior the
 code doesn't have? Did it explain the *why*? Fix what it got wrong. This is the review skill
 that matters most when documenting with AI.
