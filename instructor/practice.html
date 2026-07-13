@@ -322,7 +322,7 @@ Comments</a></li>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Documentation in Practice</h1>
-        <p>Last updated on 2026-06-22 |
+        <p>Last updated on 2026-07-13 |
 
         <a href="https://github.com/INTERSECT-training/Documentation/edit/main/episodes/practice.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -439,6 +439,21 @@ approximation for the value of a function, based on a starting value
 <code>x_0</code>, a particular step size <code>h</code>, and the
 derivative of the function.</p>
 <p>Write some documentation for the following code snippet:</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-Python" name="Python" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Python" type="button" role="tab" aria-controls="nav-tabpanel-1-Python" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-Python">
+  Python
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-R" name="R" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-R" type="button" role="tab" aria-controls="nav-tabpanel-1-R" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-R">
+  R
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-Python" class="tab-pane show active" aria-labelledby="nav-tab-1-Python" role="tabpanel">
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -450,10 +465,29 @@ derivative of the function.</p>
 <span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a>        x_j <span class="op">=</span> x <span class="op">+</span> h</span>
 <span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a>        <span class="cf">return</span> y_j, x_j</span></code></pre>
 </div>
+</div>
+<div id="nav-tabpanel-1-R" class="tab-pane" aria-labelledby="nav-tab-1-R" role="tabpanel">
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">deriv</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">y</span><span class="op">^</span><span class="fl">2</span> <span class="op">+</span> <span class="va">y</span><span class="op">*</span><span class="va">x</span> <span class="op">+</span> <span class="va">x</span><span class="op">^</span><span class="fl">3</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="va">approx</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">y</span>, <span class="va">x</span>, <span class="va">h</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">y_j</span> <span class="op">&lt;-</span> <span class="va">y</span> <span class="op">+</span> <span class="va">h</span> <span class="op">*</span> <span class="fu">deriv</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span></span>
+<span>  <span class="va">x_j</span> <span class="op">&lt;-</span> <span class="va">x</span> <span class="op">+</span> <span class="va">h</span></span>
+<span>  <span class="fu">list</span><span class="op">(</span>y_j <span class="op">=</span> <span class="va">y_j</span>, x_j <span class="op">=</span> <span class="va">x_j</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
 <p><strong>Bonus</strong>: How would you improve this code to make it
 more clear?</p>
-<p><strong>GenAI Bonus</strong>: Ask an LLM to write a docstring for
-this class. Then <em>critique</em> its output: Did it correctly describe
+<p><strong>GenAI Bonus</strong>: Ask an LLM to write documentation for
+this code. Then <em>critique</em> its output: Did it correctly describe
 what <code>deriv</code> and <code>approx</code> actually do? Did it
 invent behavior the code doesn’t have? Did it explain the <em>why</em>?
 Fix what it got wrong. This is the review skill that matters most when
@@ -621,8 +655,8 @@ accuracy.</li>
   "url": "https://INTERSECT-training.github.io/Documentation/instructor/practice.html",
   "identifier": "https://INTERSECT-training.github.io/Documentation/instructor/practice.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2026-06-22",
-  "datePublished": "2026-07-07"
+  "dateModified": "2026-07-13",
+  "datePublished": "2026-07-13"
 }
 
   </script><script>
