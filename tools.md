@@ -83,6 +83,85 @@ approx <- function(y, x, h) {
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::: solution
+
+There's no single "correct" docstring, but a good one describes what each method *actually*
+does (including the argument-order quirk in `approx`) rather than restating the code. An example
+in each language:
+
+::::::::::::::::::::::::::::::::::::::::::::::::: group-tab
+
+### Python
+
+```python
+class EulersMethod:
+    """Approximate the solution of an ODE dy/dx = f(x, y) with Euler's method."""
+
+    def deriv(self, x, y):
+        """Evaluate the derivative f(x, y) at a point.
+
+        Args:
+            x: The independent variable.
+            y: The current value of the function.
+
+        Returns:
+            float: The derivative y**2 + y*x + x**3 evaluated at (x, y).
+        """
+        return y**2 + y*x + x**3
+
+    def approx(self, y, x, h):
+        """Take a single Euler step from a known point.
+
+        Note:
+            Parameters are ordered (y, x, h), which differs from the (x, y)
+            order used by ``deriv`` — worth aligning for clarity (see Bonus).
+
+        Args:
+            y: The current value of the function.
+            x: The current independent variable.
+            h: The step size.
+
+        Returns:
+            tuple: ``(y_j, x_j)`` — the next approximated value and the
+            advanced independent variable.
+        """
+        y_j = y + h*self.deriv(x, y)
+        x_j = x + h
+        return y_j, x_j
+```
+
+### R
+
+```r
+#' Evaluate the derivative f(x, y) at a point.
+#'
+#' @param x The independent variable.
+#' @param y The current value of the function.
+#' @return The derivative y^2 + y*x + x^3 evaluated at (x, y).
+deriv <- function(x, y) {
+  y^2 + y*x + x^3
+}
+
+#' Take a single Euler step from a known point.
+#'
+#' Note: parameters are ordered (y, x, h), which differs from the (x, y)
+#' order used by `deriv` — worth aligning for clarity.
+#'
+#' @param y The current value of the function.
+#' @param x The current independent variable.
+#' @param h The step size.
+#' @return A list with `y_j` (next value) and `x_j` (advanced variable).
+approx <- function(y, x, h) {
+  y_j <- y + h * deriv(x, y)
+  x_j <- x + h
+  list(y_j = y_j, x_j = x_j)
+}
+```
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
