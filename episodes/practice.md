@@ -51,13 +51,13 @@ Two kinds of in-code documentation do most of the day-to-day work:
 
 The better practice: **comment the *why*, not the *what***. Code already says *what* it does;
 a comment like `# add 1 to i` is noise. A comment explaining *why* you add 1 (an off-by-one
-in an upstream API, say) is gold.
+in an upstream API, for example) is helpful.
 
 ## Developer Documentation Examples
 
 | Documentation Type | Explanation | Example |
 | ------------------ | ----------- | ------- |
-| Team processes | This type of documentation documents the expected development processes within a team. These generally include an objective, stakeholders, and steps to follow. | [US-RSE'23 Website Repository `CONTRIBUTING` guide](https://github.com/USRSE/usrse23/blob/main/CONTRIBUTING.md) |
+| Team processes | This type of documentation documents the expected development processes within a team. These generally include an objective, stakeholders, and steps to follow. | [USRSE'26 Website Repository `CONTRIBUTING` guide](https://github.com/USRSE/usrse26/blob/main/CONTRIBUTING.md) |
 | Styles and standards | This type of documentation states the expectations on styles and standards within a code. This can include preferred tools, usage of existing style guides, and project or domain-specific standards. | [Pyomo's Required Coding Standards](https://pyomo.readthedocs.io/en/stable/contribution_guide.html#coding-standards) |
 | API | This type of documentation is both developer and user documentation. From a developer perspective, this documentation elaborates the intent of the code, e.g., what the code is supposed to be doing, which can improve maintainability. | [Spack's API Documentation](https://spack.readthedocs.io/en/latest/spack.html) |
 
