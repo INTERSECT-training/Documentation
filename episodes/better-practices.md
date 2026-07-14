@@ -52,8 +52,8 @@ things in particular:
 
 | Watch out for... | Because... | Better Practice |
 |----------------|----------|---------|
-| **Culture** | Slang and colloquialisms ("spaghetti code") don't translate. | Use clear, concise language; assume a different background. |
-| **Context** | The same word ("workflow") means different things across domains. | Define domain-specific terms; don't assume shared jargon. |
+| **Culture** | Slang and colloquialisms ("the elephant in the room") don't translate. | Use clear, concise language; assume a different background. |
+| **Context** | The same word ("model") means different things across domains. | Define domain-specific terms; don't assume shared jargon. |
 | **Experience** | Readers range from novice to expert. | Match the expected experience level — and *state* that level in the docs. |
 
 ## Documentation Better Practices
@@ -78,7 +78,7 @@ domain, or users — but it will confidently fill the gaps anyway (this is **hal
 That makes genAI excellent for a **first draft** and for spotting what you forgot to explain,
 but the human must supply the true context and **verify every claim**. Think of it as a fast,
 eager collaborator who has never actually used your software. A good rule: *generate with AI,
-but you own the review.*
+but review and correct.*
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
