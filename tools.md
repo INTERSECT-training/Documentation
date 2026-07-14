@@ -50,8 +50,8 @@ Google has many style guides, including a Python guide for
 
 Google's Python guide is a good example, but the same principles apply in other
 languages — R users can follow an equivalent convention such as
-[roxygen2](https://roxygen2.r-lib.org/). Write documentation for the class/functions
-and their methods below:
+[Tidyverse](https://style.tidyverse.org/documentation.html). Write documentation for the
+class/functions and their methods below:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::: group-tab
 
@@ -184,8 +184,8 @@ code in one keystroke. Two caveats carry over from earlier:
 
 - **Verify it.** The assistant infers intent from code — it can describe behavior the code
   doesn't actually have. You own the review.
-- **Mind the data.** For research code, check your group's and tool's policy before sending
-  unpublished or sensitive code to a third-party service.
+- **Remember policies and privary.** For research code, check your group's and tool's policy
+  before sending unpublished or sensitive code to a third-party service.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
