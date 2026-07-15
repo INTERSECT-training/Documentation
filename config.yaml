@@ -8,7 +8,7 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
-carpentry: 'intersect'
+carpentry: 'intersect' 
 
 # Overall title for pages.
 title: 'Better Documentation' 
@@ -21,7 +21,7 @@ keywords: 'software, research, documentation, user, developer, sphinx'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'beta'
+life_cycle: 'stable'
 
 # License of the lesson
 license: 'CC-BY 4.0'
